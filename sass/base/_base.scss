@@ -12,13 +12,13 @@ html {
 }
 
 body {
-  font-family: "Lato", sans-serif;
+  font-family: "Nunito", sans-serif;
   font-weight: 300;
   line-height: 1.6;
 }
 
 .container {
   display: grid;
-  grid-template-columns: min-content 1fr;
+  grid-template-columns: max-content 1fr;
   grid-template-rows: 100vh repeat(5, min-content);
 }

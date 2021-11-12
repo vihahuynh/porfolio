@@ -10,14 +10,62 @@ html {
   box-sizing: border-box; }
 
 body {
-  font-family: "Lato", sans-serif;
+  font-family: "Nunito", sans-serif;
   font-weight: 300;
   line-height: 1.6; }
 
 .container {
   display: grid;
-  grid-template-columns: min-content 1fr;
+  grid-template-columns: max-content 1fr;
   grid-template-rows: 100vh repeat(5, min-content); }
+
+.heading-2 {
+  font-size: 4rem;
+  color: #8a4a28; }
+
+.u-margin-bottom-huge {
+  margin-bottom: 8rem; }
+
+.sidebar {
+  padding-top: 4rem;
+  text-align: center; }
+  .sidebar__list {
+    list-style: none;
+    font-size: 1.7rem; }
+  .sidebar__item {
+    position: relative;
+    padding: 1rem 6rem 1rem 4rem; }
+    .sidebar__item:not(:last-child) {
+      margin-bottom: 2px; }
+    .sidebar__item::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 3px;
+      height: 100%;
+      background-color: #ecbe9b;
+      transition: transform 0.2s, width cubic-bezier(1, 0, 0, 1) 0.4s, background-color 0.1s;
+      transform: scaleY(0); }
+    .sidebar__item:hover::before, .sidebar__item--active::before {
+      width: 100%;
+      transform: scaleY(1); }
+  .sidebar__link:link,
+  .sidebar__link :visited {
+    text-decoration: none;
+    display: flex;
+    align-items: center; }
+  .sidebar__icon {
+    height: 1.5rem;
+    width: 1.5rem;
+    fill: #8a4a28;
+    margin-right: 2rem;
+    z-index: 1; }
+  .sidebar__text {
+    color: #8a4a28;
+    font-weight: 900;
+    z-index: 1; }
 
 .header {
   background-color: #686130;
@@ -30,4 +78,7 @@ body {
 .sidebar {
   grid-column: 1 / 2;
   grid-row: 1 / -1;
-  background-color: #2a4f50; }
+  background-color: #f2e1d3;
+  position: sticky;
+  top: 0;
+  height: 100vh; }
