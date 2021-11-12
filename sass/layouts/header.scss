@@ -1,4 +1,46 @@
 .header {
-  background-color: $color-secondary;
+  position: relative;
+  background-color: $color-primary-light;
   grid-column: 2 / 3;
+
+  &__img {
+    height: 70vh;
+    background-image: url(../../img/home-bg.svg);
+    background-size: cover;
+  }
+
+  &__text-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(120%);
+    animation: moveInLeft 1s ease-out;
+  }
+
+  // &__description {
+  //   font-size: 1.4rem;
+  //   color: $color-primary-dark;
+  //   margin-top: -3rem;
+  //   margin-bottom: 1rem;
+  //   font-weight: 600;
+  // }
+
+  &__icons {
+    display: flex;
+    align-items: center;
+    margin-top: -2rem;
+  }
+
+  &__icon {
+    height: 1.7rem;
+    width: 1.7rem;
+    margin-right: 2.2rem;
+    fill: $color-primary-dark;
+    transition: all 0.2s;
+
+    &:hover {
+      transform: translateY(-3px) scale(1.2);
+    }
+  }
 }
