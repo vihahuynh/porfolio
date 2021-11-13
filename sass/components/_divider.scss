@@ -1,0 +1,38 @@
+.divider {
+  padding: 0 15rem 4rem 15rem;
+  grid-column: 1 / -1;
+  grid-row: 1 / 2;
+
+  display: grid;
+  grid-template-columns: 4rem max-content;
+  grid-column-gap: 2rem;
+
+  align-items: center;
+
+  &__dot {
+    width: 80%;
+    grid-column: 1 / 2;
+    margin-right: 3rem;
+  }
+
+  &__title {
+    grid-column: 2 / 3;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+
+    &--primary {
+      color: $color-primary-light;
+    }
+  }
+
+  &__line {
+    grid-column: 3 / 4;
+    min-width: 80rem;
+    height: 1px;
+
+    &--primary {
+      background-color: $color-primary-light;
+    }
+  }
+}

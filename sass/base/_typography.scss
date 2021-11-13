@@ -7,3 +7,11 @@
   font-size: 10rem;
   color: $color-primary-dark;
 }
+
+.heading-3 {
+  font-size: 2.5rem;
+
+  &--light {
+    color: $color-primary-light;
+  }
+}

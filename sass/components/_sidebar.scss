@@ -2,6 +2,10 @@
   padding-top: 4rem;
   text-align: center;
 
+  // dev
+  opacity: 0;
+  display: none;
+
   &__list {
     list-style: none;
     font-size: 1.7rem;
