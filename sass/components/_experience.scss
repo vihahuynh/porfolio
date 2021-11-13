@@ -1,0 +1,88 @@
+.experience {
+  grid-row: 3 / 4;
+  grid-column: 1 / -1;
+  padding: 10rem 0;
+
+  background-color: $color-primary-light;
+
+  display: grid;
+  grid-template-columns: 15rem 1fr 0.1fr 1fr 15rem;
+  grid-template-rows: repeat(4, min-context);
+
+  justify-items: start;
+  align-items: center;
+
+  grid-row-gap: 3rem;
+
+  &__work-img,
+  &__education-img {
+    justify-self: center;
+    width: 60%;
+  }
+
+  &__education-img {
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+    animation: moveInLeft 1s ease-in;
+  }
+
+  &__education-description {
+    grid-row: 2 / 3;
+    grid-column: 4 / 5;
+    animation: moveInLeft 1s ease-in;
+  }
+
+  &__work-img {
+    grid-row: 4 / 5;
+    grid-column: 2 / 3;
+    animation: moveInLeft 1s ease-in 0.2s;
+    animation-fill-mode: backwards;
+  }
+
+  &__work-description {
+    grid-row: 4 / 5;
+    grid-column: 4 / 5;
+    animation: moveInLeft 1s ease-in 0.2s;
+    animation-fill-mode: backwards;
+  }
+
+  &__date {
+    margin-bottom: 1rem;
+    color: $color-primary-dark;
+  }
+
+  &__school-name {
+    &--sub {
+      font-weight: 400;
+      font-size: 1.2rem;
+      color: $color-primary-dark;
+    }
+
+    &--main {
+      font-weight: 600;
+      font-size: 1.6rem;
+      color: $color-primary-dark;
+    }
+  }
+
+  &__company-name {
+    font-weight: 600;
+    font-size: 1.6rem;
+    color: $color-primary-dark;
+  }
+
+  &__work-details {
+    font-size: 1.2rem;
+    color: $color-primary-dark;
+    font-weight: 400;
+  }
+
+  //   &__divider {
+  //     margin-bottom: 2rem;
+  //     justify-self: center;
+  //     width: 15%;
+  //     grid-column: 1 / -1;
+  //     grid-row: 3 / 4;
+  //     border-bottom: 0.7rem dotted $color-primary;
+  //   }
+}

@@ -2,6 +2,7 @@
   background-color: $color-primary-light;
   grid-column: 1 / -1;
   grid-row: 1 / 2;
+  position: relative;
 
   &__img {
     height: 70vh;
@@ -15,7 +16,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    transform: translateY(135%);
+    // transform: translateY(135%);
+    position: relative;
+    top: 35%;
     animation: moveInLeft 1s ease-out;
   }
 

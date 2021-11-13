@@ -7,6 +7,7 @@
   grid-template-columns: 4rem max-content;
   grid-column-gap: 2rem;
 
+  justify-self: center;
   align-items: center;
 
   &__dot {
@@ -21,8 +22,12 @@
     text-transform: uppercase;
     letter-spacing: 0.5rem;
 
-    &--primary {
+    &--primary-light {
       color: $color-primary-light;
+    }
+
+    &--primary-dark {
+      color: $color-primary-dark;
     }
   }
 
@@ -31,8 +36,11 @@
     min-width: 80rem;
     height: 1px;
 
-    &--primary {
+    &--primary-light {
       background-color: $color-primary-light;
+    }
+    &--primary-dark {
+      background-color: $color-primary-dark;
     }
   }
 }
