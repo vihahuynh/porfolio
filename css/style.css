@@ -333,12 +333,13 @@ body {
     transform: scale(1.05); }
   .works__box:hover .works__details {
     opacity: 1;
-    background-color: rgba(104, 97, 48, 0.7); }
+    background-color: rgba(104, 97, 48, 0.8); }
   .works__box:hover .works__details .works__description,
   .works__box:hover .works__details .works__title,
   .works__box:hover .works__details .works__tags {
     transform: translateY(0); }
   .works__details {
+    display: block;
     text-align: center;
     width: 100%;
     height: 100%;
@@ -375,7 +376,7 @@ body {
     color: #686130;
     background-color: #f2e1d3;
     border-radius: 0 0 2rem 2rem;
-    padding: 1.2rem 2rem 0.8rem;
+    padding: 1rem 2rem 0.6rem;
     transform: translateY(-3rem);
     transition: all 0.5s; }
   .works__btn {

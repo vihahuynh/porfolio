@@ -44,7 +44,7 @@
 
   &__box:hover &__details {
     opacity: 1;
-    background-color: rgba($color-secondary, 0.7);
+    background-color: rgba($color-secondary, 0.8);
   }
 
   &__box:hover &__details &__description,
@@ -54,6 +54,7 @@
   }
 
   &__details {
+    display: block;
     text-align: center;
     width: 100%;
     height: 100%;
@@ -100,7 +101,7 @@
     color: $color-secondary;
     background-color: $color-primary-light;
     border-radius: 0 0 2rem 2rem;
-    padding: 1.2rem 2rem 0.8rem;
+    padding: 1rem 2rem 0.6rem;
 
     transform: translateY(-3rem);
     transition: all 0.5s;
