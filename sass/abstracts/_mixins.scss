@@ -1,0 +1,20 @@
+@mixin icons-list($fill-color) {
+  &__icons {
+    display: flex;
+    align-items: center;
+    margin-top: -2rem;
+    margin-left: 2.2rem;
+  }
+
+  &__icon {
+    height: 1.7rem;
+    width: 1.7rem;
+    fill: $fill-color;
+    transition: all 0.2s;
+    margin-right: 2.2rem;
+
+    &:hover {
+      transform: translateY(-3px) scale(1.2);
+    }
+  }
+}

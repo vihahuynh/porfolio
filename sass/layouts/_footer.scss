@@ -1,4 +1,27 @@
 .footer {
+  height: 25vh;
   background-color: $color-primary;
+  background-image: url(../../img/footer.svg);
+  background-size: cover;
   grid-column: 2 / 3;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  position: relative;
+
+  &__content {
+    position: absolute;
+    bottom: 2rem;
+  }
+
+  &__copyright {
+    margin-top: 1rem;
+    font-size: 1.4rem;
+    color: $color-primary-light;
+    display: block;
+  }
+
+  @include icons-list($color-primary-light);
 }
