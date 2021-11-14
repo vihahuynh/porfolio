@@ -18,7 +18,10 @@ body {
 }
 
 .container {
+  position: relative;
+  z-index: -100;
+  margin: 3rem;
   display: grid;
-  grid-template-columns: 0 1fr;
+  grid-template-columns: 1fr;
   grid-template-rows: 100vh repeat(6, min-content);
 }

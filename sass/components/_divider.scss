@@ -1,13 +1,14 @@
 .divider {
+  width: 100%;
   padding: 0 15rem 4rem 15rem;
   grid-column: 1 / -1;
   grid-row: 1 / 2;
 
   display: grid;
-  grid-template-columns: 4rem max-content;
+  grid-template-columns: 4rem max-content 1fr;
   grid-column-gap: 2rem;
 
-  justify-self: center;
+  justify-self: start;
   align-items: center;
 
   &__dot {
@@ -34,7 +35,7 @@
 
   &__line {
     grid-column: 3 / 4;
-    min-width: 60vw;
+    width: 100%;
     height: 1px;
 
     &--primary-light {

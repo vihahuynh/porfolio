@@ -3,12 +3,26 @@
   grid-column: 1 / -1;
   grid-row: 1 / 2;
   position: relative;
+  z-index: -2;
+
+  &__logo {
+    height: 5rem;
+    width: 5rem;
+    position: absolute;
+    top: 3rem;
+    left: 3.5rem;
+  }
 
   &__img {
-    height: 70vh;
+    display: inline-block;
+    height: 85vh;
+    width: 100%;
     background-image: url(../../img/home-bg.svg);
     background-size: cover;
-    margin-top: 2rem;
+    position: absolute;
+    bottom: -1rem;
+    left: 0;
+    z-index: -1;
   }
 
   &__text-box {
@@ -18,7 +32,7 @@
     align-items: center;
     // transform: translateY(135%);
     position: relative;
-    top: 35%;
+    top: 22%;
     animation: moveInLeft 1s ease-out;
   }
 
@@ -30,5 +44,5 @@
   //   font-weight: 600;
   // }
 
-  @include icons-list($color-primary-dark);
+  @include icons-list($color-primary-dark, 4rem);
 }

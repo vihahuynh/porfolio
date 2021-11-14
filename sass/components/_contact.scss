@@ -48,10 +48,14 @@
       width: 95%;
     }
 
+    &:hover {
+      box-shadow: 0 0.5rem 1rem rgba($color-primary-dark, 0.2);
+    }
+
     &:focus {
       outline: none;
       border-bottom: 2.5px solid $color-primary-dark;
-      box-shadow: 0 0.5rem 1rem rgba($color-primary-dark, 0.1);
+      box-shadow: 0 0.5rem 1rem rgba($color-primary-dark, 0.2);
     }
 
     &::placeholder {

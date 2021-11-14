@@ -18,7 +18,34 @@
     <title>Nemo | Personal site</title>
   </head>
   <body class="container">
+    <div class="navigation">
+      <input type="checkbox" class="navigation__checkbox" id="nav-toggle" />
+      <label for="nav-toggle" class="navigation__btn">
+        <span class="navigation__icon">&nbsp;</span>
+      </label>
+      <div class="navigation__background">&nbsp;</div>
+      <div class="navigation__nav">
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a href="#" class="navigation__link">Home</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link">About me</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link">Education & Experience</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link">Recent Works</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link">Contact me</a>
+          </li>
+        </ul>
+      </div>
+    </div>
     <header class="header">
+      <img src="img/favicon.png" alt="Logo" class="header__logo" />
       <div class="header__text-box">
         <h1 class="heading-1">Nemo</h1>
         <!-- <p class="header__description">I'm Nemo Huynh</p> -->
@@ -46,56 +73,13 @@
       </div>
       <div class="header__img"></div>
     </header>
-    <section class="sidebar">
-      <h2 class="heading-2 u-margin-bottom-huge">Nemo</h2>
-      <ul class="sidebar__list">
-        <li class="sidebar__item sidebar__item--active">
-          <a href="#" class="sidebar__link">
-            <svg class="sidebar__icon">
-              <use xlink:href="img/sprite.svg#icon-home"></use>
-            </svg>
-            <span class="sidebar__text">Home</span>
-          </a>
-        </li>
 
-        <li class="sidebar__item">
-          <a href="#about" class="sidebar__link">
-            <svg class="sidebar__icon">
-              <use xlink:href="img/sprite.svg#icon-layers"></use>
-            </svg>
-            <span class="sidebar__text">About</span>
-          </a>
-        </li>
-        <li class="sidebar__item">
-          <a href="#experience" class="sidebar__link">
-            <svg class="sidebar__icon">
-              <use xlink:href="img/sprite.svg#icon-briefcase"></use>
-            </svg>
-            <span class="sidebar__text">Experience</span>
-          </a>
-        </li>
-        <li class="sidebar__item">
-          <a href="#experience" class="sidebar__link">
-            <svg class="sidebar__icon">
-              <use xlink:href="img/sprite.svg#icon-rocket"></use>
-            </svg>
-            <span class="sidebar__text">Works</span>
-          </a>
-        </li>
-        <li class="sidebar__item">
-          <a href="#contact" class="sidebar__link">
-            <svg class="sidebar__icon">
-              <use xlink:href="img/sprite.svg#icon-message"></use>
-            </svg>
-            <span class="sidebar__text">Contact</span>
-          </a>
-        </li>
-      </ul>
-    </section>
     <section class="about">
       <div class="divider">
         <img src="img/dot-white-skin.svg" alt="dot" class="divider__dot" />
-        <span class="divider__title divider__title--primary-light">about</span>
+        <span class="divider__title divider__title--primary-light"
+          >about me</span
+        >
         <span class="divider__line divider__line--primary-light">&nbsp;</span>
       </div>
       <div class="about__picture-box">
@@ -127,7 +111,9 @@
     <section class="experience">
       <div class="divider">
         <img src="img/dot-brown.svg" alt="dot" class="divider__dot" />
-        <span class="divider__title divider__title--primary-dark">about</span>
+        <span class="divider__title divider__title--primary-dark"
+          >education & experience</span
+        >
         <span class="divider__line divider__line--primary-dark">&nbsp;</span>
       </div>
       <img
@@ -171,7 +157,9 @@
     <section class="contact">
       <div class="divider">
         <img src="img/dot-brown.svg" alt="dot" class="divider__dot" />
-        <span class="divider__title divider__title--primary-dark">contact</span>
+        <span class="divider__title divider__title--primary-dark"
+          >contact me</span
+        >
         <span class="divider__line divider__line--primary-dark">&nbsp;</span>
       </div>
       <div class="contact__form-box">
