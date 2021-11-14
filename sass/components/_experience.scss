@@ -1,47 +1,49 @@
 .experience {
   grid-row: 3 / 4;
   grid-column: 1 / -1;
-  padding: 10rem 0;
+  padding: 10rem 15rem;
 
   background-color: $color-primary-light;
 
   display: grid;
-  grid-template-columns: 15rem 1fr 0.1fr 1fr 15rem;
+  grid-template-columns: 1fr 0.1fr 1fr;
   grid-template-rows: repeat(4, min-context);
 
   justify-items: start;
   align-items: center;
 
-  grid-row-gap: 3rem;
+  // grid-row-gap: 3rem;
 
   &__work-img,
   &__education-img {
-    justify-self: center;
+    margin-left: 10%;
     width: 60%;
   }
 
   &__education-img {
     grid-row: 2 / 3;
-    grid-column: 2 / 3;
+    grid-column: 1 / 2;
     animation: moveInLeft 1s ease-in;
+    margin-bottom: 5rem;
   }
 
   &__education-description {
     grid-row: 2 / 3;
-    grid-column: 4 / 5;
+    grid-column: 3 / 4;
     animation: moveInLeft 1s ease-in;
+    margin-bottom: 5rem;
   }
 
   &__work-img {
     grid-row: 4 / 5;
-    grid-column: 2 / 3;
+    grid-column: 1 / 2;
     animation: moveInLeft 1s ease-in 0.2s;
     animation-fill-mode: backwards;
   }
 
   &__work-description {
     grid-row: 4 / 5;
-    grid-column: 4 / 5;
+    grid-column: 3 / 4;
     animation: moveInLeft 1s ease-in 0.2s;
     animation-fill-mode: backwards;
   }

@@ -1,16 +1,16 @@
 .about {
-  padding: 8rem 0;
+  padding: 10rem 15rem;
   background-color: $color-secondary-dark;
   grid-column: 1 / -1;
   grid-row: 2 / 3;
   display: grid;
-  grid-template-columns: 13rem repeat(2, 1fr) 17rem;
+  grid-template-columns: repeat(2, 1fr);
   grid-template-rows: min-content min-content;
   align-items: center;
   justify-items: center;
 
   &__picture-box {
-    grid-column: 2 / 3;
+    grid-column: 1 / 2;
     grid-row: 2 / 3;
   }
 
@@ -19,7 +19,7 @@
   }
 
   &__introduction {
-    grid-column: 3 / 4;
+    grid-column: 2 / 3;
     grid-row: 2 / 3;
   }
 

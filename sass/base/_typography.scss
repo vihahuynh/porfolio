@@ -24,7 +24,13 @@
 .heading-5 {
   font-weight: 700;
   font-size: 1.8rem;
-  color: $color-primary-dark;
+  &--light {
+    color: $color-primary-light;
+  }
+
+  &--dark {
+    color: $color-primary-dark;
+  }
 }
 
 .heading-sub {

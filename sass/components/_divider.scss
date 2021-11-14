@@ -1,6 +1,6 @@
 .divider {
   width: 100%;
-  padding: 0 15rem 4rem 15rem;
+  padding-bottom: 6rem;
   grid-column: 1 / -1;
   grid-row: 1 / 2;
 
@@ -31,6 +31,10 @@
     &--primary-dark {
       color: $color-primary-dark;
     }
+
+    &--secondary {
+      color: $color-secondary;
+    }
   }
 
   &__line {
@@ -43,6 +47,10 @@
     }
     &--primary-dark {
       background-color: $color-primary-dark;
+    }
+
+    &--secondary {
+      background-color: $color-secondary;
     }
   }
 }

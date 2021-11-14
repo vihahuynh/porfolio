@@ -138,7 +138,7 @@
   }
 
   &__checkbox:checked ~ &__background {
-    transform: scale(100);
+    transform: scale(75);
   }
 
   &__checkbox:checked ~ &__btn &__icon {
