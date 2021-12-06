@@ -1,0 +1,17 @@
+.load {
+  background-color: $color-primary-light;
+  margin: 3rem;
+  height: calc(100vh - 6rem);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: all 0.3s;
+
+  &__icon {
+    height: 5rem;
+    width: 5rem;
+    fill: $color-primary-dark;
+    animation: spin 1.5s linear infinite;
+  }
+}

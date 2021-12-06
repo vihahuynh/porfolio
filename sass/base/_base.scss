@@ -24,4 +24,10 @@ body {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 100vh repeat(6, min-content);
+
+  transition: all 0.3s;
+}
+
+.hidden {
+  display: none !important;
 }

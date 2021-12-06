@@ -32,7 +32,6 @@
     align-items: center;
     position: relative;
     top: 26%;
-    animation: moveInLeft 1s ease-out;
   }
 
   // &__description {
@@ -44,4 +43,8 @@
   // }
 
   @include icons-list($color-primary-dark, 4rem);
+}
+
+.animate {
+  animation: moveInLeft 0.8s ease-out;
 }
