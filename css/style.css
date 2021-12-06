@@ -503,8 +503,8 @@ body {
     transform: translateY(1.1rem); }
   .navigation__background {
     position: fixed;
-    top: 6rem;
-    right: 6rem;
+    top: 5.5rem;
+    right: 5.5rem;
     height: 5rem;
     width: 5rem;
     background-color: #f2e1d3;
@@ -540,7 +540,7 @@ body {
     color: #8a4a28;
     letter-spacing: 0.2rem;
     padding: 1.2rem 2.5rem;
-    transition: all 0.4s;
+    transition: all 0.2s ease-in;
     background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #8a4a28 50%);
     background-size: 250%; }
   .navigation__link:hover, .navigation__link:active {

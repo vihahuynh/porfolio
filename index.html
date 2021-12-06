@@ -10,10 +10,10 @@
       href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
     <!-- <link rel="stylesheet" href="css/icon-font.css" /> -->
     <link rel="stylesheet" href="css/style.css" />
     <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+    <script defer src="script.js"></script>
 
     <title>Nemo | Personal site</title>
   </head>
@@ -27,24 +27,26 @@
       <div class="navigation__nav">
         <ul class="navigation__list">
           <li class="navigation__item">
-            <a href="#" class="navigation__link">Home</a>
+            <a href="#home" class="navigation__link">Home</a>
           </li>
           <li class="navigation__item">
-            <a href="#" class="navigation__link">About me</a>
+            <a href="#about" class="navigation__link">About me</a>
           </li>
           <li class="navigation__item">
-            <a href="#" class="navigation__link">Education & Experience</a>
+            <a href="#experience" class="navigation__link"
+              >Education & Experience</a
+            >
           </li>
           <li class="navigation__item">
-            <a href="#" class="navigation__link">Recent Works</a>
+            <a href="#works" class="navigation__link">Recent Works</a>
           </li>
           <li class="navigation__item">
-            <a href="#" class="navigation__link">Contact me</a>
+            <a href="#contact" class="navigation__link">Contact me</a>
           </li>
         </ul>
       </div>
     </div>
-    <header class="header">
+    <header class="header" id="home">
       <img src="img/favicon.png" alt="Logo" class="header__logo" />
       <div class="header__text-box">
         <h1 class="heading-1">Nemo</h1>
@@ -55,16 +57,16 @@
               <use xlink:href="img/sprite.svg#icon-mail"></use>
             </svg>
           </a>
-          <a href="https://www.freecodecamp.org/" target="_blank"
+          <a href="https://www.linkedin.com/in/huynhviha/" target="_blank"
             ><svg class="header__icon">
               <use xlink:href="img/sprite.svg#icon-linkedin"></use></svg
           ></a>
-          <a href="https://www.freecodecamp.org/" target="_blank">
+          <a href="https://github.com/vihahuynh" target="_blank">
             <svg class="header__icon">
               <use xlink:href="img/sprite.svg#icon-github"></use>
             </svg>
           </a>
-          <a href="https://www.freecodecamp.org/" target="_blank">
+          <a href="https://www.instagram.com/__hanemo__/" target="_blank">
             <svg class="header__icon">
               <use xlink:href="img/sprite.svg#icon-instagram"></use>
             </svg>
@@ -74,7 +76,7 @@
       <div class="header__img"></div>
     </header>
 
-    <section class="about">
+    <section class="about" id="about">
       <div class="divider">
         <img src="img/dot-white-skin.svg" alt="dot" class="divider__dot" />
         <span class="divider__title divider__title--primary-light"
@@ -108,7 +110,7 @@
         >
       </div>
     </section>
-    <section class="experience">
+    <section class="experience" id="experience">
       <div class="divider">
         <img src="img/dot-brown.svg" alt="dot" class="divider__dot" />
         <span class="divider__title divider__title--primary-dark"
@@ -153,7 +155,7 @@
         </p>
       </div>
     </section>
-    <section class="works">
+    <section class="works" id="works">
       <div class="divider">
         <img src="img/dot-dark-green.svg" alt="dot" class="divider__dot" />
         <span class="divider__title divider__title--secondary"
@@ -231,7 +233,7 @@
       </div>
       <a class="btn works__btn">Show more</a>
     </section>
-    <section class="contact">
+    <section class="contact" id="contact">
       <div class="divider">
         <img src="img/dot-brown.svg" alt="dot" class="divider__dot" />
         <span class="divider__title divider__title--primary-dark"
@@ -336,16 +338,16 @@
               <use xlink:href="img/sprite.svg#icon-mail"></use>
             </svg>
           </a>
-          <a href="https://www.freecodecamp.org/" target="_blank"
+          <a href="https://www.linkedin.com/in/huynhviha/" target="_blank"
             ><svg class="footer__icon">
               <use xlink:href="img/sprite.svg#icon-linkedin"></use></svg
           ></a>
-          <a href="https://www.freecodecamp.org/" target="_blank">
+          <a href="https://github.com/vihahuynh" target="_blank">
             <svg class="footer__icon">
               <use xlink:href="img/sprite.svg#icon-github"></use>
             </svg>
           </a>
-          <a href="https://www.freecodecamp.org/" target="_blank">
+          <a href="https://www.instagram.com/__hanemo__/" target="_blank">
             <svg class="footer__icon">
               <use xlink:href="img/sprite.svg#icon-instagram"></use>
             </svg>
