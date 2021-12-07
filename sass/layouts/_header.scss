@@ -3,7 +3,7 @@
   grid-column: 1 / -1;
   grid-row: 1 / 2;
   position: relative;
-  z-index: -2;
+  z-index: 5;
 
   &__logo {
     height: 5rem;
@@ -22,7 +22,7 @@
     position: absolute;
     bottom: -1rem;
     left: 0;
-    z-index: -1;
+    z-index: 1;
   }
 
   &__text-box {
