@@ -32,11 +32,15 @@ body {
 
 .container {
   position: relative;
+  z-index: 1;
   margin: 3rem;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 100vh repeat(6, min-content);
   transition: all 0.3s; }
+
+.hidden {
+  display: none !important; }
 
 .heading-2 {
   font-size: 4rem;
@@ -45,8 +49,7 @@ body {
 .heading-1 {
   font-size: 10rem;
   color: #8a4a28;
-  letter-spacing: 2rem;
-  z-index: 5; }
+  letter-spacing: 2rem; }
 
 .heading-3 {
   font-size: 2.5rem; }
@@ -412,7 +415,7 @@ body {
   grid-column: 1 / -1;
   grid-row: 1 / 2;
   position: relative;
-  z-index: 5; }
+  z-index: -2; }
   .header__logo {
     height: 5rem;
     width: 5rem;
@@ -428,7 +431,7 @@ body {
     position: absolute;
     bottom: -1rem;
     left: 0;
-    z-index: 1; }
+    z-index: -1; }
   .header__text-box {
     display: flex;
     flex-direction: column;
@@ -441,7 +444,7 @@ body {
     align-items: center;
     margin-top: -2rem;
     margin-left: 4rem;
-    z-index: 5; }
+    z-index: 10; }
   .header__icon {
     height: 1.7rem;
     width: 1.7rem;
@@ -477,7 +480,7 @@ body {
     align-items: center;
     margin-top: -2rem;
     margin-left: 2.2rem;
-    z-index: 5; }
+    z-index: 10; }
   .footer__icon {
     height: 1.7rem;
     width: 1.7rem;

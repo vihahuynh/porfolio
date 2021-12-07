@@ -19,7 +19,7 @@ body {
 
 .container {
   position: relative;
-  // z-index: -100;
+  z-index: 1;
   margin: 3rem;
   display: grid;
   grid-template-columns: 1fr;
@@ -28,6 +28,6 @@ body {
   transition: all 0.3s;
 }
 
-// .hidden {
-//   display: none !important;
-// }
+.hidden {
+  display: none !important;
+}
