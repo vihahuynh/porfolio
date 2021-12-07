@@ -42,6 +42,13 @@ body {
 .hidden {
   display: none !important; }
 
+.section__container {
+  transition: transform 1s, opacity 1s; }
+
+.section--hidden {
+  opacity: 0;
+  transform: translateY(8rem); }
+
 .heading-2 {
   font-size: 4rem;
   color: #8a4a28; }
@@ -87,11 +94,13 @@ body {
 .u-margin-bottom-tiny {
   margin-bottom: 1rem; }
 
-.about {
-  padding: 10rem;
-  background-color: #2a4f50;
+.section--about {
   grid-column: 1 / -1;
   grid-row: 2 / 3;
+  background-color: #2a4f50; }
+
+.about {
+  padding: 10rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: min-content min-content;
@@ -131,11 +140,13 @@ body {
   transform: translateY(-0.1rem);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
 
-.contact {
+.section--contact {
   grid-column: 1 / -1;
   grid-row: 5 / 6;
   background-color: #ecbe9b;
-  padding: 10rem;
+  padding: 10rem; }
+
+.contact {
   display: grid;
   grid-template-columns: 2fr 1fr;
   grid-template-rows: min-content min-content;
@@ -259,11 +270,13 @@ body {
     .divider__line--secondary {
       background-color: #686130; }
 
-.experience {
+.section--experience {
   grid-row: 3 / 4;
   grid-column: 1 / -1;
   padding: 10rem;
-  background-color: #f2e1d3;
+  background-color: #f2e1d3; }
+
+.experience {
   display: grid;
   grid-template-columns: 1fr 0.1fr 1fr;
   grid-template-rows: repeat(4, min-context);
@@ -275,23 +288,17 @@ body {
   .experience__education-img {
     grid-row: 2 / 3;
     grid-column: 1 / 2;
-    animation: moveInLeft 1s ease-in;
     margin-bottom: 5rem; }
   .experience__education-description {
     grid-row: 2 / 3;
     grid-column: 3 / 4;
-    animation: moveInLeft 1s ease-in;
     margin-bottom: 5rem; }
   .experience__work-img {
     grid-row: 4 / 5;
-    grid-column: 1 / 2;
-    animation: moveInLeft 1s ease-in 0.2s;
-    animation-fill-mode: backwards; }
+    grid-column: 1 / 2; }
   .experience__work-description {
     grid-row: 4 / 5;
-    grid-column: 3 / 4;
-    animation: moveInLeft 1s ease-in 0.2s;
-    animation-fill-mode: backwards; }
+    grid-column: 3 / 4; }
   .experience__date {
     margin-bottom: 1rem;
     color: #8a4a28; }
@@ -326,11 +333,13 @@ body {
     fill: #8a4a28;
     animation: spin 1.5s linear infinite; }
 
-.works {
+.section--works {
   grid-column: 1 / -1;
   grid-row: 4 / 5;
   background-color: #b8b798;
-  padding: 10rem;
+  padding: 10rem; }
+
+.works {
   display: grid;
   grid-template-rows: repeat(3, min-content); }
   .works__grid {

@@ -1,10 +1,11 @@
-.experience {
+.section--experience {
   grid-row: 3 / 4;
   grid-column: 1 / -1;
   padding: 10rem;
-
   background-color: $color-primary-light;
+}
 
+.experience {
   display: grid;
   grid-template-columns: 1fr 0.1fr 1fr;
   grid-template-rows: repeat(4, min-context);
@@ -23,29 +24,29 @@
   &__education-img {
     grid-row: 2 / 3;
     grid-column: 1 / 2;
-    animation: moveInLeft 1s ease-in;
+    // animation: moveInLeft 1s ease-in;
     margin-bottom: 5rem;
   }
 
   &__education-description {
     grid-row: 2 / 3;
     grid-column: 3 / 4;
-    animation: moveInLeft 1s ease-in;
+    // animation: moveInLeft 1s ease-in;
     margin-bottom: 5rem;
   }
 
   &__work-img {
     grid-row: 4 / 5;
     grid-column: 1 / 2;
-    animation: moveInLeft 1s ease-in 0.2s;
-    animation-fill-mode: backwards;
+    // animation: moveInLeft 1s ease-in 0.2s;
+    // animation-fill-mode: backwards;
   }
 
   &__work-description {
     grid-row: 4 / 5;
     grid-column: 3 / 4;
-    animation: moveInLeft 1s ease-in 0.2s;
-    animation-fill-mode: backwards;
+    // animation: moveInLeft 1s ease-in 0.2s;
+    // animation-fill-mode: backwards;
   }
 
   &__date {

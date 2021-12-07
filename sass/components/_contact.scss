@@ -1,9 +1,11 @@
-.contact {
+.section--contact {
   grid-column: 1 / -1;
   grid-row: 5 / 6;
   background-color: $color-primary;
   padding: 10rem;
+}
 
+.contact {
   display: grid;
   grid-template-columns: 2fr 1fr;
   grid-template-rows: min-content min-content;

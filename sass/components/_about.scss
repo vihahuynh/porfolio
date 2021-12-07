@@ -1,8 +1,12 @@
-.about {
-  padding: 10rem;
-  background-color: $color-secondary-dark;
+.section--about {
   grid-column: 1 / -1;
   grid-row: 2 / 3;
+  background-color: $color-secondary-dark;
+}
+
+.about {
+  padding: 10rem;
+
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: min-content min-content;

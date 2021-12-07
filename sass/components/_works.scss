@@ -1,9 +1,11 @@
-.works {
+.section--works {
   grid-column: 1 / -1;
   grid-row: 4 / 5;
   background-color: $color-secondary-light;
   padding: 10rem;
+}
 
+.works {
   display: grid;
   grid-template-rows: repeat(3, min-content);
 
