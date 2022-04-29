@@ -140,6 +140,15 @@ body {
   transform: translateY(-0.1rem);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
 
+.btn--small, .btn--small:link, .btn--small:visited {
+  font-size: 1.2rem;
+  padding: 0.8rem 2rem;
+  margin: 0rem 0.4rem;
+  margin-top: 1.5rem;
+  font-weight: 700;
+  background-color: #f2e1d3;
+  color: #686130; }
+
 .section--contact {
   grid-column: 1 / -1;
   grid-row: 5 / 6;
@@ -372,7 +381,8 @@ body {
     display: block; }
   .works__box:hover .works__details .works__description,
   .works__box:hover .works__details .works__title,
-  .works__box:hover .works__details .works__tags {
+  .works__box:hover .works__details .works__tags,
+  .works__box:hover .works__details .works__links {
     transform: translateY(0); }
   .works__details {
     display: block;
@@ -400,7 +410,7 @@ body {
     font-weight: 700;
     font-size: 2.5rem;
     color: #f2e1d3;
-    margin-bottom: 1rem;
+    margin-bottom: 0.7rem;
     transform: translateY(3rem);
     transition: all 0.5s; }
   .works__tags {
@@ -418,6 +428,9 @@ body {
   .works__btn {
     margin-top: 6rem;
     justify-self: center; }
+  .works__links {
+    transform: translateY(3rem);
+    transition: all 0.5s; }
 
 .header {
   background-color: #f2e1d3;
