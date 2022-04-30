@@ -41,3 +41,14 @@
     color: $color-secondary;
   }
 }
+
+.btn--disabled {
+  color: $color-secondary-light;
+  text-decoration: line-through;
+
+  &:hover,
+  &:active {
+    transform: none;
+    box-shadow: none;
+  }
+}

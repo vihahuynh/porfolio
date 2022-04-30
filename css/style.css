@@ -49,6 +49,10 @@ body {
   opacity: 0;
   transform: translateY(8rem); }
 
+.hidden {
+  display: none;
+  visibility: hidden; }
+
 .heading-2 {
   font-size: 4rem;
   color: #8a4a28; }
@@ -148,6 +152,13 @@ body {
   font-weight: 700;
   background-color: #f2e1d3;
   color: #686130; }
+
+.btn--disabled {
+  color: #b8b798;
+  text-decoration: line-through; }
+  .btn--disabled:hover, .btn--disabled:active {
+    transform: none;
+    box-shadow: none; }
 
 .section--contact {
   grid-column: 1 / -1;
@@ -425,9 +436,17 @@ body {
     padding: 1rem 2rem 0.6rem;
     transform: translateY(-3rem);
     transition: all 0.5s; }
-  .works__btn {
+  .works__btn-grid {
     margin-top: 6rem;
-    justify-self: center; }
+    justify-self: center;
+    display: grid;
+    grid-gap: 4rem; }
+  .works__btn--more {
+    grid-row: 1/1;
+    grid-column: 1/2; }
+  .works__btn--less {
+    grid-row: 1/1;
+    grid-column: 2/3; }
   .works__links {
     transform: translateY(3rem);
     transition: all 0.5s; }

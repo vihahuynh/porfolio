@@ -4,6 +4,9 @@ const navList = document.querySelector(".navigation__list");
 const container = document.querySelector(".container");
 const load = document.querySelector(".load");
 const headerTextBox = document.querySelector(".header__text-box");
+const showMoreBtn = document.querySelector(".works__btn--more");
+const showLessBtn = document.querySelector(".works__btn--less");
+const projects = document.querySelectorAll(".works__box");
 
 document.onreadystatechange = function () {
   var state = document.readyState;
@@ -47,4 +50,40 @@ const sectionsObserver = new IntersectionObserver(revealSection, {
 document.querySelectorAll(".section__container").forEach((section) => {
   section.classList.add("section--hidden");
   sectionsObserver.observe(section);
+});
+
+// project
+let showedProjects = 3;
+
+const toggleProjects = () => {
+  projects.forEach((project, index) => {
+    if (index >= showedProjects && index < showedProjects + 3) {
+      project.classList.toggle("hidden");
+    }
+  });
+};
+
+const checkDisableBtn = () => {
+  if (showedProjects === 3) {
+    showLessBtn.classList.add("btn--disabled");
+  } else if (showedProjects === 9) {
+    showMoreBtn.classList.add("btn--disabled");
+  } else {
+    showMoreBtn.classList.remove("btn--disabled");
+    showLessBtn.classList.remove("btn--disabled");
+  }
+};
+
+showMoreBtn.addEventListener("click", (e) => {
+  toggleProjects();
+  showedProjects += 3;
+  checkDisableBtn();
+});
+
+showLessBtn.addEventListener("click", (e) => {
+  showedProjects -= 3;
+  if (showedProjects > 0) {
+    toggleProjects();
+  }
+  checkDisableBtn();
 });

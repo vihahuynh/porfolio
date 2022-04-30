@@ -111,9 +111,21 @@
     transition: all 0.5s;
   }
 
-  &__btn {
+  &__btn-grid {
     margin-top: 6rem;
     justify-self: center;
+    display: grid;
+    grid-gap: 4rem;
+  }
+
+  &__btn--more {
+    grid-row: 1/1;
+    grid-column: 1/2;
+  }
+
+  &__btn--less {
+    grid-row: 1/1;
+    grid-column: 2/3;
   }
 
   &__links {
