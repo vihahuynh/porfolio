@@ -59,7 +59,9 @@ body {
 
 @media (max-width: 37.5em) {
   html {
-    font-size: 40%; } }
+    font-size: 40%; }
+  .container {
+    grid-template-rows: 50vh repeat(6, min-content); } }
 
 .heading-2 {
   font-size: 4rem;
@@ -518,7 +520,7 @@ body {
     display: inline-block;
     height: 85vh;
     width: 100%;
-    background-image: url(../../img/home-bg.svg);
+    background-image: url(~/../../img/home-bg.svg);
     background-size: cover;
     position: absolute;
     bottom: -1rem;
@@ -549,10 +551,14 @@ body {
 .animate {
   animation: moveInLeft 0.8s ease-out; }
 
+@media (max-width: 37.5em) {
+  .header__img {
+    height: 40vh; } }
+
 .footer {
   height: 25vh;
   background-color: #ecbe9b;
-  background-image: url(../../img/footer.svg);
+  background-image: url(~/../../img/footer.svg);
   background-size: cover;
   grid-column: 1 / -1;
   display: flex;

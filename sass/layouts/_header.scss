@@ -17,7 +17,7 @@
     display: inline-block;
     height: 85vh;
     width: 100%;
-    background-image: url(../../img/home-bg.svg);
+    background-image: url(~/../../img/home-bg.svg);
     background-size: cover;
     position: absolute;
     bottom: -1rem;
@@ -47,4 +47,12 @@
 
 .animate {
   animation: moveInLeft 0.8s ease-out;
+}
+
+@media (max-width: 37.5em) {
+  .header {
+    &__img {
+      height: 40vh;
+    }
+  }
 }

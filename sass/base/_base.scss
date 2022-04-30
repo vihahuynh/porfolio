@@ -56,4 +56,8 @@ body {
   html {
     font-size: 40%;
   }
+
+  .container {
+    grid-template-rows: 50vh repeat(6, min-content);
+  }
 }
