@@ -89,7 +89,6 @@ showLessBtn.addEventListener("click", (e) => {
 });
 
 // Send Email
-
 const sendEmail = () => {
   const username = document.getElementById("username").value;
   const email = document.getElementById("email").value;
@@ -99,9 +98,9 @@ const sendEmail = () => {
   Email.send({
     SecureToken: "44cc85c7-d5d9-413c-82f1-2656d0bea78e",
     To: "huynhviha1703@gmail.com",
-    From: email,
+    From: "huynhviha1703@gmail.com",
     Subject: subject,
-    Body: `My name is ${username}, \n ${message}`,
+    Body: `My name is ${username}, ${email}, ${message}`,
   }).then((message) => {
     alert(message);
     document.getElementById("username").value = "";
