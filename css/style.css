@@ -520,7 +520,7 @@ body {
     display: inline-block;
     height: 85vh;
     width: 100%;
-    background-image: url(~/../../img/home-bg.svg);
+    background-image: url(https://svgur.com/i/gkD.svg);
     background-size: cover;
     position: absolute;
     bottom: -1rem;
@@ -558,7 +558,7 @@ body {
 .footer {
   height: 25vh;
   background-color: #ecbe9b;
-  background-image: url(~/../../img/footer.svg);
+  background-image: url(https://svgur.com/i/gjT.svg);
   background-size: cover;
   grid-column: 1 / -1;
   display: flex;
