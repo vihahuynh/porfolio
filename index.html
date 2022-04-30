@@ -13,6 +13,7 @@
     <!-- <link rel="stylesheet" href="css/icon-font.css" /> -->
     <link rel="stylesheet" href="css/style.css" />
     <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script defer src="script.js"></script>
 
     <title>Nemo | Personal site</title>
@@ -58,9 +59,9 @@
           <h1 class="heading-1">Nemo</h1>
           <!-- <p class="header__description">I'm Nemo Huynh</p> -->
           <div class="header__icons">
-            <a href="https://www.freecodecamp.org/" target="_blank">
+            <a href="https://www.facebook.com/nemo.huynh.viha" target="_blank">
               <svg class="header__icon">
-                <use xlink:href="img/sprite.svg#icon-mail"></use>
+                <use xlink:href="img/sprite.svg#icon-facebook"></use>
               </svg>
             </a>
             <a href="https://www.linkedin.com/in/huynhviha/" target="_blank"
@@ -104,15 +105,22 @@
             <h3 class="heading-3 heading-3--light u-margin-bottom-small">
               Hi, I'm Nemo
             </h3>
+            <p class="about__text u-margin-bottom-small">
+              I'm a self-taught front-end developer. I'm also learning back-end
+              development and looking forward to be a full-stack web developer.
+            </p>
+            <p class="about__text u-margin-bottom-small">
+              I am seeking a
+              <strong>Junior Front-end/ Full-Stack Software Developer</strong>
+              position to I can enhance my knowledge of web development and grow
+              with the organization.
+            </p>
+            <p class="about__text">
+              <strong>My skill set:</strong> HTML, CSS, Javascript, React,
+              Python,...
+            </p>
             <p class="about__text u-margin-bottom-medium">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita
-              maiores laudantium sint debitis vero eos aspernatur perferendis
-              saepe, fuga aliquam eaque repellat doloremque perspiciatis
-              quibusdam, provident cumque voluptatem incidunt. Sint. Lorem ipsum
-              dolor sit amet consectetur adipisicing elit. Repellendus aliquid,
-              voluptatum dicta aliquam ad odit ducimus veniam reprehenderit
-              deleniti praesentium modi, iusto culpa repudiandae possimus in rem
-              doloribus nisi assumenda.
+              <strong>Hobbies:</strong> reading, trekking, traveling,...
             </p>
             <a
               href="profile-picture.svg"
@@ -477,12 +485,15 @@
             <p class="heading-sub u-margin-bottom-small">
               I will never share your email with anyone else
             </p>
-            <form action="" class="contact__form">
+            <!-- <form method="post">
+              <input type="button" value="Send Email" onclick="sendEmail()"/>
+            </form>  -->
+            <form method="post" action="" class="contact__form">
               <div class="contact__group contact__group--name">
                 <input
                   type="text"
                   class="contact__input"
-                  id="name"
+                  id="username"
                   placeholder="Your name"
                 />
                 <!-- <label for="name" class="contact__label">Your name</label> -->
@@ -515,7 +526,13 @@
                 ></textarea>
                 <!-- <label for="message" class="contact__label">Message</label> -->
               </div>
-              <button type="submit" class="contact__btn">Send message</button>
+              <input
+                type="button"
+                class="contact__btn"
+                value="Send message"
+                onclick="sendEmail()"
+              />
+              <!-- <button type="submit" class="contact__btn">Send message</button> -->
             </form>
           </div>
           <div class="contact__details">
@@ -552,7 +569,7 @@
             </div>
             <div class="contact__info-box">
               <svg class="contact__icon">
-                <use xlink:href="img/sprite.svg#icon-mail"></use>
+                <use xlink:href="img/sprite.svg#icon-facebook"></use>
               </svg>
               <div class="contact__info">
                 <h5 class="heading-5 heading-5--dark">Gmail</h5>
@@ -565,9 +582,9 @@
       <footer class="footer">
         <div class="footer__content">
           <div class="footer__icons">
-            <a href="https://www.freecodecamp.org/" target="_blank">
+            <a href="https://www.facebook.com/nemo.huynh.viha" target="_blank">
               <svg class="footer__icon">
-                <use xlink:href="img/sprite.svg#icon-mail"></use>
+                <use xlink:href="img/sprite.svg#icon-facebook"></use>
               </svg>
             </a>
             <a href="https://www.linkedin.com/in/huynhviha/" target="_blank"

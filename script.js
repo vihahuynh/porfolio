@@ -87,3 +87,26 @@ showLessBtn.addEventListener("click", (e) => {
   }
   checkDisableBtn();
 });
+
+// Send Email
+
+const sendEmail = () => {
+  const username = document.getElementById("username").value;
+  const email = document.getElementById("email").value;
+  const subject = document.getElementById("subject").value;
+  const message = document.getElementById("message").value;
+
+  Email.send({
+    SecureToken: "44cc85c7-d5d9-413c-82f1-2656d0bea78e",
+    To: "huynhviha1703@gmail.com",
+    From: email,
+    Subject: subject,
+    Body: `My name is ${username}, \n ${message}`,
+  }).then((message) => {
+    alert(message);
+    document.getElementById("username").value = "";
+    document.getElementById("email").value = "";
+    document.getElementById("subject").value = "";
+    document.getElementById("message").value = "";
+  });
+};
