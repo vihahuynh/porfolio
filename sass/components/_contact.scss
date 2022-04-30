@@ -148,3 +148,29 @@
     color: $color-primary-dark;
   }
 }
+
+@media (max-width: 37.5em) {
+  .section--contact {
+    padding: 5rem;
+  }
+
+  .contact {
+    grid-template-columns: 1fr;
+    grid-template-rows: min-content;
+
+    &__form-box {
+      grid-column: 1 / 2;
+      grid-row: 2 / 3;
+    }
+
+    &__form {
+      width: 100%;
+    }
+
+    &__details {
+      margin-top: 6rem;
+      grid-column: 1 / 2;
+      grid-row: 3 / 4;
+    }
+  }
+}

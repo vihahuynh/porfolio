@@ -32,3 +32,23 @@
     color: $color-primary-light;
   }
 }
+
+@media (max-width: 37.5em) {
+  .about {
+    padding: 5rem;
+
+    &__picture {
+      width: 50%;
+    }
+
+    &__picture-box {
+      grid-column: 1 / 3;
+      grid-row: 2 / 3;
+    }
+
+    &__introduction {
+      grid-column: 1 / 3;
+      grid-row: 3 / 4;
+    }
+  }
+}

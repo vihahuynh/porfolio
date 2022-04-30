@@ -133,3 +133,15 @@
     transition: all 0.5s;
   }
 }
+
+@media (max-width: 37.5em) {
+  .works {
+    &__box {
+      height: 40vw;
+    }
+
+    &__btn-grid {
+      grid-gap: 2rem;
+    }
+  }
+}

@@ -79,13 +79,20 @@
     color: $color-primary-dark;
     font-weight: 400;
   }
+}
 
-  //   &__divider {
-  //     margin-bottom: 2rem;
-  //     justify-self: center;
-  //     width: 15%;
-  //     grid-column: 1 / -1;
-  //     grid-row: 3 / 4;
-  //     border-bottom: 0.7rem dotted $color-primary;
-  //   }
+@media (max-width: 37.5em) {
+  .section--experience {
+    padding: 5rem;
+  }
+
+  .experience {
+    grid-template-columns: 0.5fr 0.05fr 1.5fr;
+
+    &__work-img,
+    &__education-img {
+      margin-left: 0;
+      width: 80%;
+    }
+  }
 }
