@@ -179,12 +179,16 @@
       }
     }
 
+    &__checkbox:checked ~ &__background {
+      transform: scale(120);
+    }
+
     &__link {
       &,
       &:link,
       &:visited {
         padding: 1.2rem 0rem;
-        font-size: 2rem;
+        font-size: 1.5rem;
       }
     }
   }

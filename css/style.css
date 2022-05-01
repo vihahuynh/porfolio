@@ -703,6 +703,8 @@ body {
     .navigation__icon, .navigation__icon::before, .navigation__icon::after {
       height: 2px;
       width: 2rem; }
+  .navigation__checkbox:checked ~ .navigation__background {
+    transform: scale(120); }
   .navigation__link, .navigation__link:link, .navigation__link:visited {
     padding: 1.2rem 0rem;
-    font-size: 2rem; } }
+    font-size: 1.5rem; } }
