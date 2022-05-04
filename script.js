@@ -17,7 +17,7 @@ document.onreadystatechange = function () {
       load.classList.add("hidden");
       container.classList.remove("hidden");
       headerTextBox.classList.add("animate");
-    }, 400);
+    }, 200);
   }
 };
 
