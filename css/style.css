@@ -553,7 +553,13 @@ body {
 
 @media (max-width: 37.5em) {
   .header__img {
-    height: 40vh; } }
+    height: 40vh; }
+  .header__logo {
+    height: 4rem;
+    width: 4rem;
+    position: absolute;
+    top: 2rem;
+    left: 2.5rem; } }
 
 .footer {
   height: 25vh;

@@ -54,5 +54,13 @@
     &__img {
       height: 40vh;
     }
+
+    &__logo {
+      height: 4rem;
+      width: 4rem;
+      position: absolute;
+      top: 2rem;
+      left: 2.5rem;
+    }
   }
 }
