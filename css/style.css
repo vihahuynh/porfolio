@@ -498,6 +498,10 @@ body {
     transform: translateY(3rem);
     transition: all 0.5s; }
 
+@media (min-width: 87.5em) {
+  .works__grid {
+    grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr)); } }
+
 @media (max-width: 37.5em) {
   .works__box {
     height: 40vw; }
@@ -520,7 +524,6 @@ body {
     display: inline-block;
     height: 85vh;
     width: 100%;
-    background-image: url(https://svgur.com/i/gkD.svg);
     background-size: cover;
     position: absolute;
     bottom: -1rem;
@@ -533,6 +536,8 @@ body {
     align-items: center;
     position: relative;
     top: 26%; }
+  .header__img {
+    margin-bottom: -11rem; }
   .header__icons {
     display: flex;
     align-items: center;
@@ -562,9 +567,9 @@ body {
     left: 2.5rem; } }
 
 .footer {
+  position: relative;
   height: 25vh;
   background-color: #ecbe9b;
-  background-image: url(https://svgur.com/i/gjT.svg);
   background-size: cover;
   grid-column: 1 / -1;
   display: flex;
@@ -573,12 +578,20 @@ body {
   position: relative; }
   .footer__content {
     position: absolute;
-    bottom: 2rem; }
+    bottom: 2rem;
+    z-index: 10; }
   .footer__copyright {
     margin-top: 1rem;
     font-size: 1.4rem;
     color: #f2e1d3;
-    display: block; }
+    display: block;
+    z-index: 10; }
+  .footer__img {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 5; }
   .footer__icons {
     display: flex;
     align-items: center;
@@ -683,7 +696,7 @@ body {
     opacity: 1;
     font-size: 3rem; }
   .navigation__checkbox:checked ~ .navigation__background {
-    transform: scale(75); }
+    transform: scale(85); }
   .navigation__checkbox:checked ~ .navigation__btn .navigation__icon {
     background-color: transparent; }
   .navigation__checkbox:checked ~ .navigation__btn .navigation__icon::before {

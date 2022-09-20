@@ -134,6 +134,14 @@
   }
 }
 
+@media (min-width: 87.5em) {
+  .works {
+    &__grid {
+      grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+    }
+  }
+}
+
 @media (max-width: 37.5em) {
   .works {
     &__box {

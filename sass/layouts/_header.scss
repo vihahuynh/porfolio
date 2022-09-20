@@ -17,7 +17,7 @@
     display: inline-block;
     height: 85vh;
     width: 100%;
-    background-image: url(https://svgur.com/i/gkD.svg);
+    // background-image: url(https://svgur.com/i/gkD.svg);
     background-size: cover;
     position: absolute;
     bottom: -1rem;
@@ -32,6 +32,10 @@
     align-items: center;
     position: relative;
     top: 26%;
+  }
+
+  &__img {
+    margin-bottom: -11rem;
   }
 
   // &__description {
