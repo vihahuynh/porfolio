@@ -18,7 +18,7 @@
   }
 
   &__box {
-    height: 18vw;
+    height: 25rem;
     overflow: hidden;
     border-radius: 1rem;
     position: relative;
@@ -62,7 +62,7 @@
     text-align: center;
     width: 102%;
     height: 102%;
-    padding: 20%;
+    padding: 15%;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -92,7 +92,7 @@
     color: $color-primary-light;
     margin-bottom: 0.7rem;
 
-    transform: translateY(3rem);
+    transform: translateY(0rem);
     transition: all 0.5s;
   }
 
@@ -138,6 +138,16 @@
   .works {
     &__grid {
       grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+    }
+  }
+}
+
+@media (min-width: 75em) {
+  .works {
+
+    &__title {
+      font-size: 2rem;
+      margin-bottom: .5rem;
     }
   }
 }

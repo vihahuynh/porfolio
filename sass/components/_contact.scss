@@ -27,6 +27,7 @@
 
   &__group {
     margin: 0.7rem 0;
+
     &--subject,
     &--message {
       grid-column: 1 / -1;
@@ -66,7 +67,8 @@
     }
 
     &:focus::placeholder {
-      transform: translateY(3rem);
+      display: none;
+      // transform: translateY(3rem);
     }
   }
 
