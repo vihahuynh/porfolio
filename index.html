@@ -514,13 +514,14 @@
             <!-- <form method="post">
               <input type="button" value="Send Email" onclick="sendEmail()"/>
             </form>  -->
-            <form method="post" action="" class="contact__form">
+            <form method="post" action="" class="contact__form" id="contact-form">
               <div class="contact__group contact__group--name">
                 <input
                   type="text"
                   class="contact__input"
                   id="username"
                   placeholder="Your name" />
+                  <p class="contact__error contact__error--username"></p>
               </div>
               <div class="contact__group contact__group--email">
                 <input
@@ -528,6 +529,7 @@
                   class="contact__input"
                   id="email"
                   placeholder="Email address" />
+                  <p class="contact__error contact__error--email"></p>
               </div>
               <div class="contact__group contact__group--subject">
                 <input
@@ -535,6 +537,7 @@
                   class="contact__input contact__input--lg"
                   id="subject"
                   placeholder="Subject" />
+                  <p class="contact__error contact__error--subject"></p>
               </div>
               <div class="contact__group contact__group--message">
                 <textarea
@@ -542,8 +545,8 @@
                   type="text"
                   class="contact__input contact__input--lg"
                   id="message"
-                  placeholder="Message">
-                </textarea>
+                  placeholder="Message"></textarea>
+                <p class="contact__error contact__error--message"></p>
               </div>
               <input
                 type="button"

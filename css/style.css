@@ -204,6 +204,11 @@ body {
     margin: 0.7rem 0; }
     .contact__group--subject, .contact__group--message {
       grid-column: 1 / -1; }
+  .contact__error {
+    margin-left: 2rem;
+    margin-top: 0.5rem;
+    font-size: 1.2rem;
+    color: red; }
   .contact__input {
     display: block;
     width: 90%;
@@ -363,7 +368,7 @@ body {
     color: #8a4a28; }
   .experience__school-name--sub {
     font-weight: 400;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     color: #8a4a28; }
   .experience__school-name--main {
     font-weight: 600;
@@ -374,7 +379,7 @@ body {
     font-size: 1.6rem;
     color: #8a4a28; }
   .experience__work-details {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     color: #8a4a28;
     font-weight: 400; }
 
