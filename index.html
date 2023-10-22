@@ -1,349 +1,458 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,700;1,800;1,900&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script defer src="script.js"></script>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,700;1,800;1,900&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
-  <script src="https://smtpjs.com/v3/smtp.js"></script>
-  <script defer src="script.js"></script>
+    <title>Nemo | Personal site</title>
+  </head>
 
-  <title>Nemo | Personal site</title>
-</head>
-
-<body>
-  <div class="load">
-    <svg class="load__icon">
-      <use xlink:href="img/sprite.svg#icon-spinner6"></use>
-    </svg>
-  </div>
-  <div class="container hidden">
-    <div class="navigation">
-      <input type="checkbox" class="navigation__checkbox" id="nav-toggle" />
-      <label for="nav-toggle" class="navigation__btn">
-        <span class="navigation__icon">&nbsp;</span>
-      </label>
-      <div class="navigation__background">&nbsp;</div>
-      <div class="navigation__nav">
-        <ul class="navigation__list">
-          <li class="navigation__item">
-            <a href="#home" class="navigation__link">Home</a>
-          </li>
-          <li class="navigation__item">
-            <a href="#about" class="navigation__link">About me</a>
-          </li>
-          <li class="navigation__item">
-            <a href="#experience" class="navigation__link">Education & Experience</a>
-          </li>
-          <li class="navigation__item">
-            <a href="#works" class="navigation__link">Recent Works</a>
-          </li>
-          <li class="navigation__item">
-            <a href="#contact" class="navigation__link">Contact me</a>
-          </li>
-        </ul>
-      </div>
+  <body>
+    <div class="load">
+      <svg class="load__icon">
+        <use xlink:href="img/sprite.svg#icon-spinner6"></use>
+      </svg>
     </div>
-    <header class="header" id="home">
-      <img class="header__img" src="img/home-bg.svg" alt="header" />
-      <img src="img/favicon.png" alt="Logo" class="header__logo" />
-      <div class="header__text-box">
-        <h1 class="heading-1">Nemo</h1>
-        <!-- <p class="header__description">I'm Nemo Huynh</p> -->
-        <div class="header__icons">
-          <a href="https://www.facebook.com/nemo.huynh.viha" target="_blank">
-            <svg class="header__icon">
-              <use xlink:href="img/sprite.svg#icon-facebook"></use>
-            </svg>
-          </a>
-          <a href="https://www.linkedin.com/in/huynhviha/" target="_blank"><svg class="header__icon">
-              <use xlink:href="img/sprite.svg#icon-linkedin"></use>
-            </svg></a>
-          <a href="https://github.com/vihahuynh" target="_blank">
-            <svg class="header__icon">
-              <use xlink:href="img/sprite.svg#icon-github"></use>
-            </svg>
-          </a>
-          <a href="https://www.instagram.com/__hanemo__/" target="_blank">
-            <svg class="header__icon">
-              <use xlink:href="img/sprite.svg#icon-instagram"></use>
-            </svg>
-          </a>
+    <div class="container hidden">
+      <div class="navigation">
+        <input type="checkbox" class="navigation__checkbox" id="nav-toggle" />
+        <label for="nav-toggle" class="navigation__btn">
+          <span class="navigation__icon">&nbsp;</span>
+        </label>
+        <div class="navigation__background">&nbsp;</div>
+        <div class="navigation__nav">
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <a href="#home" class="navigation__link">Home</a>
+            </li>
+            <li class="navigation__item">
+              <a href="#about" class="navigation__link">About me</a>
+            </li>
+            <li class="navigation__item">
+              <a href="#experience" class="navigation__link"
+                >Education & Experience</a
+              >
+            </li>
+            <li class="navigation__item">
+              <a href="#works" class="navigation__link">Recent Works</a>
+            </li>
+            <li class="navigation__item">
+              <a href="#contact" class="navigation__link">Contact me</a>
+            </li>
+          </ul>
         </div>
       </div>
-      <div class="header__img"></div>
-    </header>
+      <header class="header" id="home">
+        <img class="header__img" src="img/home-bg.svg" alt="header" />
+        <img src="img/favicon.png" alt="Logo" class="header__logo" />
+        <div class="header__text-box">
+          <h1 class="heading-1">Nemo</h1>
+          <!-- <p class="header__description">I'm Nemo Huynh</p> -->
+          <div class="header__icons">
+            <a href="https://www.facebook.com/nemo.huynh.viha" target="_blank">
+              <svg class="header__icon">
+                <use xlink:href="img/sprite.svg#icon-facebook"></use>
+              </svg>
+            </a>
+            <a href="https://www.linkedin.com/in/huynhviha/" target="_blank"
+              ><svg class="header__icon">
+                <use xlink:href="img/sprite.svg#icon-linkedin"></use></svg
+            ></a>
+            <a href="https://github.com/vihahuynh" target="_blank">
+              <svg class="header__icon">
+                <use xlink:href="img/sprite.svg#icon-github"></use>
+              </svg>
+            </a>
+            <a href="https://www.instagram.com/__hanemo__/" target="_blank">
+              <svg class="header__icon">
+                <use xlink:href="img/sprite.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="header__img"></div>
+      </header>
 
-    <section class="section section--about" id="about">
-      <div class="section__container about">
-        <div class="divider">
-          <img src="img/dot-white-skin.svg" alt="dot" class="divider__dot" />
-          <span class="divider__title divider__title--primary-light">about me</span>
-          <span class="divider__line divider__line--primary-light">&nbsp;</span>
+      <section class="section section--about" id="about">
+        <div class="section__container about">
+          <div class="divider">
+            <img src="img/dot-white-skin.svg" alt="dot" class="divider__dot" />
+            <span class="divider__title divider__title--primary-light"
+              >about me</span
+            >
+            <span class="divider__line divider__line--primary-light"
+              >&nbsp;</span
+            >
+          </div>
+          <div class="about__picture-box">
+            <img
+              src="img/profile-picture.svg"
+              alt="profile"
+              class="about__picture" />
+          </div>
+          <div class="about__introduction">
+            <h3 class="heading-3 heading-3--light u-margin-bottom-small">
+              Hi, I'm Nemo
+            </h3>
+            <p class="about__text u-margin-bottom-small">
+              I'm a dedicated full-stack developer eager to expand my skills in
+              web development while contributing to an organization's growth. I
+              am driven by the desire to create efficient, user-friendly
+              applications that make a meaningful impact.
+            </p>
+            <!-- <p class="about__text u-margin-bottom-small">
+              I am seeking a
+              <strong>Full-stack Developer</strong>
+              position so I can enhance my knowledge of web development and grow
+              with the organization.
+            </p> -->
+            <p class="about__text u-margin-bottom-small">
+              With experience in a diverse array of technologies, from front-end
+              frameworks like <strong>React</strong> and
+              <strong>Next.js</strong> to back-end systems using
+              <strong>Node.js</strong>, <strong>Next.js</strong> and databases
+              like <strong>MongoDB</strong> and <strong>PostgreSQL</strong>. I
+              also have experience working with
+              <strong>microservices</strong> systems utilizing
+              <strong>Kafka</strong> and <strong>gRPC</strong>, and ensuring
+              code quality through testing with <strong>Jest</strong> and
+              <strong>Cypress</strong>
+            </p>
+            <p class="about__text u-margin-bottom-medium">
+              Outside of work, I enjoy reading, gardening, trekking, and
+              traveling.
+            </p>
+            <a
+              href="https://drive.google.com/file/d/1JXKkWQvaJXlSCPgxMdX0k65qagglct8M/view"
+              class="btn"
+              target="_blank"
+              >download CV</a
+            >
+          </div>
         </div>
-        <div class="about__picture-box">
-          <img src="img/profile-picture.svg" alt="profile" class="about__picture" />
+      </section>
+      <section class="section section--experience" id="experience">
+        <div class="section__container experience">
+          <div class="divider">
+            <img src="img/dot-brown.svg" alt="dot" class="divider__dot" />
+            <span class="divider__title divider__title--primary-dark"
+              >education & experience</span
+            >
+            <span class="divider__line divider__line--primary-dark"
+              >&nbsp;</span
+            >
+          </div>
+          <img
+            src="img/education.svg"
+            alt="Education"
+            class="experience__education-img" />
+          <div class="experience__education-description">
+            <h3 class="heading-3 heading-3--dark">
+              Bachelor of Computer Science
+            </h3>
+            <p class="experience__date">SEP 2015 - DEC 2020</p>
+            <p class="experience__school-name--sub">
+              VIETNAM NATIONAL UNIVERSITY HCMC
+            </p>
+            <p class="experience__school-name--main">
+              UNIVERSITY OF INFORMATION TECHNOLOGY
+            </p>
+          </div>
+          <div class="experience__divider">&nbsp;</div>
+          <img
+            src="img/experience.svg"
+            alt="Experience"
+            class="experience__work-img" />
+          <div class="experience__work-description">
+            <h3 class="heading-3 heading-3--dark">Associate Data Engineer</h3>
+            <p class="experience__date">NOV 2019 - NOV 2021</p>
+            <p class="experience__company-name">VNG CORPORATION</p>
+            <p class="experience__work-details">
+              Ensuring data quality by performing data cleaning, mapping,
+              transformation, and standardization to deliver precise business
+              insights from diverse raw data sources.
+            </p>
+            <p class="experience__work-details">
+              Working with Python, PySpark, Kafka, Hive, the Hadoop ecosystem,
+              and databases like MongoDB and PostgreSQL
+            </p>
+            <p class="experience__work-details">
+              Constructing robust data pipelines using Airflow, covering data
+              ingestion, ETL processes, and proactive monitoring with alerting
+              systems.
+            </p>
+            <p class="experience__work-details">
+              Contributing to the development of web application features
+              utilizing React, NodeJS, MongoDB, and PostgreSQL while supporting
+              code quality through unit testing with Jest.
+            </p>
+            <!-- <p class="experience__work-details">
+              Support writing unit tests (Jest).
+            </p> -->
+            <br />
+            <h3 class="heading-3 heading-3--dark">Full-stack Developer</h3>
+            <p class="experience__date">NOV 2021 - PRESENT</p>
+            <p class="experience__company-name">CYBERLOGICTEC VIETNAM</p>
+            <p class="experience__work-details"></p>
+            <p class="experience__work-details">
+              Implementing web application for managing business operations for
+              a large shipping company
+            </p>
+            <p class="experience__work-details">
+              Working in logistics-related operations with complex business
+              logic, collaborate directly or indirectly with Product Owners (PO)
+              and Business Analysts (BA) from Japan and South Korea.
+            </p>
+            <p class="experience__work-details">
+              Core skills include Next.js, Nest.js, Postgres, gRPC, and
+              test-driven development using Jest and Cypress.
+            </p>
+            <p class="experience__work-details">
+              Using Agile and Scrum methodologies, ensuring that projects run
+              smoothly and are delivered on time
+            </p>
+          </div>
         </div>
-        <div class="about__introduction">
-          <h3 class="heading-3 heading-3--light u-margin-bottom-small">
-            Hi, I'm Nemo
-          </h3>
-          <p class="about__text u-margin-bottom-small">
-            I'm a self-taught front-end developer. I'm also learning back-end
-            development and looking forward to becoming a full-stack web
-            developer.
-          </p>
-          <p class="about__text u-margin-bottom-small">
-            I am seeking a
-            <strong>Junior Front-end/ Full-stack Developer</strong>
-            position so I can enhance my knowledge of web development and grow
-            with the organization.
-          </p>
-          <p class="about__text">
-            <strong>My skill set:</strong> HTML, CSS, Javascript, React,
-            Python,...
-          </p>
-          <p class="about__text u-margin-bottom-medium">
-            <strong>Hobbies:</strong> reading, trekking, traveling,...
-          </p>
-          <a href="https://drive.google.com/file/d/1JXKkWQvaJXlSCPgxMdX0k65qagglct8M/view" class="btn"
-            target="_blank">download CV</a>
-        </div>
-      </div>
-    </section>
-    <section class="section section--experience" id="experience">
-      <div class="section__container experience">
-        <div class="divider">
-          <img src="img/dot-brown.svg" alt="dot" class="divider__dot" />
-          <span class="divider__title divider__title--primary-dark">education & experience</span>
-          <span class="divider__line divider__line--primary-dark">&nbsp;</span>
-        </div>
-        <img src="img/education.svg" alt="Education" class="experience__education-img" />
-        <div class="experience__education-description">
-          <h3 class="heading-3 heading-3--dark">
-            Bachelor of Computer Science
-          </h3>
-          <p class="experience__date">SEP 2015 - DEC 2020</p>
-          <p class="experience__school-name--sub">
-            VIETNAM NATIONAL UNIVERSITY HCMC
-          </p>
-          <p class="experience__school-name--main">
-            UNIVERSITY OF INFORMATION TECHNOLOGY
-          </p>
-        </div>
-        <div class="experience__divider">&nbsp;</div>
-        <img src="img/experience.svg" alt="Experience" class="experience__work-img" />
-        <div class="experience__work-description">
-          <h3 class="heading-3 heading-3--dark">Associate Data Engineer</h3>
-          <p class="experience__date">NOV 2019 - NOV 2021</p>
-          <p class="experience__company-name">VNG CORPORATION</p>
-          <p class="experience__work-details">
-            Handle data quality (cleaning/ mapping/ transformation/
-            standardization…) for delivering clear business insights from a
-            variety of raw data sources.
-          </p>
-          <p class="experience__work-details">
-            Working with Python, PySpark, Kafka, Hive, Hadoop ecosystem, and
-            databases such as MongoDB, PostgreSQL.
-          </p>
-          <p class="experience__work-details">
-            Build data pipeine using Airflow (ingest -> ETL -> monitor and
-            alert).
-          </p>
-          <br />
-          <p class="experience__work-details">
-            Participate in the development of web application features (React,
-            NodeJS, MongoDB, PostgreSQL).
-          </p>
-          <p class="experience__work-details">
-            Support writing unit tests (Jest).
-          </p>
-          <br>
-          <h3 class="heading-3 heading-3--dark">Junior Front-End Developer</h3>
-          <p class="experience__date">NOV 2021 - PRESENT</p>
-          <p class="experience__company-name">ORCAS SOFTWARE</p>
-          <p class="experience__work-details">
-            Developed and implemented front-end code using HTML, CSS, JavaScript, React, Sharepoint Framework (SPFx) to
-            meet business requirements.
-          </p>
-          <p class="experience__work-details">
-            Collaborated with the team to design new features for our web application and mobile app
-          </p>
-          <p class="experience__work-details">
-            Collaborated with other developers to fix bugs in existing code and add features as needed.
-          </p>
-        </div>
+      </section>
+      <section class="section section--works" id="works">
+        <div class="section__container works">
+          <div class="divider">
+            <img src="img/dot-dark-green.svg" alt="dot" class="divider__dot" />
+            <span class="divider__title divider__title--secondary"
+              >Recent works</span
+            >
+            <span class="divider__line divider__line--secondary">&nbsp;</span>
+          </div>
+          <div class="works__grid">
+            <div class="works__box">
+              <img
+                src="img/project-plantme.png"
+                alt="Plantme"
+                class="works__img" />
+              <div class="works__details">
+                <p class="works__tags">React, NodeJS</p>
+                <h5 class="works__title">Plantme</h5>
+                <p class="works__description">
+                  E-commerce website (In progress)
+                </p>
+                <div class="works__links">
+                  <a
+                    class="btn btn--small"
+                    href="https://github.com/vihahuynh/plant-me-fe"
+                    target="_blank">
+                    Code
+                  </a>
+                  <a
+                    class="btn btn--small"
+                    href="https://plantme.fly.dev/#/"
+                    target="_blank">
+                    Demo
+                  </a>
+                </div>
+              </div>
+            </div>
 
-      </div>
-    </section>
-    <section class="section section--works" id="works">
-      <div class="section__container works">
-        <div class="divider">
-          <img src="img/dot-dark-green.svg" alt="dot" class="divider__dot" />
-          <span class="divider__title divider__title--secondary">Recent works</span>
-          <span class="divider__line divider__line--secondary">&nbsp;</span>
-        </div>
-        <div class="works__grid">
-          <div class="works__box">
-            <img src="img/project-plantme.png" alt="Plantme" class="works__img" />
-            <div class="works__details">
-              <p class="works__tags">React, NodeJS</p>
-              <h5 class="works__title">Plantme</h5>
-              <p class="works__description">
-                E-commerce website (In progress)
-              </p>
-              <div class="works__links">
-                <a class="btn btn--small" href="https://github.com/vihahuynh/plant-me-fe" target="_blank">
-                  Code
-                </a>
-                <a class="btn btn--small" href="https://plantme.fly.dev/#/" target="_blank">
-                  Demo
-                </a>
+            <div class="works__box">
+              <img
+                src="img/project-kino.png"
+                alt="Kino streaming"
+                class="works__img" />
+              <div class="works__details">
+                <p class="works__tags">React, CSS</p>
+                <h5 class="works__title">Kino Streaming</h5>
+                <p class="works__description">
+                  Watch free movies and TV shows online
+                </p>
+                <div class="works__links">
+                  <a
+                    class="btn btn--small"
+                    href="https://github.com/vihahuynh/Kino-Streaming-Web"
+                    target="_blank">
+                    Code
+                  </a>
+                  <a
+                    class="btn btn--small"
+                    href="https://kino-streaming.herokuapp.com/"
+                    target="_blank">
+                    Demo
+                  </a>
+                </div>
               </div>
             </div>
-          </div>
+            <div class="works__box">
+              <img
+                src="img/project-bloglist.png"
+                alt="Blog List"
+                class="works__img" />
+              <div class="works__details">
+                <p class="works__tags">React, Redux, NodeJS, Jest,...</p>
+                <h5 class="works__title">Blog List</h5>
+                <p class="works__description">
+                  Save information about interesting blogs on internet
+                </p>
+                <div class="works__links">
+                  <a
+                    class="btn btn--small"
+                    href="https://github.com/vihahuynh/BlogList"
+                    target="_blank">
+                    Code
+                  </a>
+                  <a
+                    class="btn btn--small"
+                    href="https://my-blog-list.herokuapp.com"
+                    target="_blank">
+                    Demo
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="works__box hidden">
+              <img
+                src="img/project-forkify.png"
+                alt="Forkify"
+                class="works__img" />
+              <div class="works__details">
+                <p class="works__tags">HTML, SCSS, Javascript</p>
+                <h5 class="works__title">Forkify</h5>
+                <p class="works__description">
+                  Search recipes for multiple different foods
+                </p>
+                <div class="works__links">
+                  <a
+                    class="btn btn--small"
+                    href="https://github.com/vihahuynh/Forkify"
+                    target="_blank">
+                    Code
+                  </a>
+                  <a
+                    class="btn btn--small"
+                    href="https://forkify-nemo.netlify.app/"
+                    target="_blank">
+                    Demo
+                  </a>
+                </div>
+              </div>
+            </div>
 
-          <div class="works__box">
-            <img src="img/project-kino.png" alt="Kino streaming" class="works__img" />
-            <div class="works__details">
-              <p class="works__tags">React, CSS</p>
-              <h5 class="works__title">Kino Streaming</h5>
-              <p class="works__description">
-                Watch free movies and TV shows online
-              </p>
-              <div class="works__links">
-                <a class="btn btn--small" href="https://github.com/vihahuynh/Kino-Streaming-Web" target="_blank">
-                  Code
-                </a>
-                <a class="btn btn--small" href="https://kino-streaming.herokuapp.com/" target="_blank">
-                  Demo
-                </a>
+            <div class="works__box hidden">
+              <img
+                src="img/project-mytee.png"
+                alt="My tee"
+                class="works__img" />
+              <div class="works__details">
+                <p class="works__tags">HTML, SCSS</p>
+                <h5 class="works__title">My Tee</h5>
+                <p class="works__description">
+                  A mockup landing page for e-commerce website
+                </p>
+                <div class="works__links">
+                  <a
+                    class="btn btn--small"
+                    href="https://github.com/vihahuynh/My-Tee"
+                    target="_blank">
+                    Code
+                  </a>
+                  <a
+                    class="btn btn--small"
+                    href="https://vihahuynh.github.io/My-Tee/"
+                    target="_blank">
+                    Demo
+                  </a>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="works__box">
-            <img src="img/project-bloglist.png" alt="Blog List" class="works__img" />
-            <div class="works__details">
-              <p class="works__tags">React, Redux, NodeJS, Jest,...</p>
-              <h5 class="works__title">Blog List</h5>
-              <p class="works__description">
-                Save information about interesting blogs on internet
-              </p>
-              <div class="works__links">
-                <a class="btn btn--small" href="https://github.com/vihahuynh/BlogList" target="_blank">
-                  Code
-                </a>
-                <a class="btn btn--small" href="https://my-blog-list.herokuapp.com" target="_blank">
-                  Demo
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="works__box hidden">
-            <img src="img/project-forkify.png" alt="Forkify" class="works__img" />
-            <div class="works__details">
-              <p class="works__tags">HTML, SCSS, Javascript</p>
-              <h5 class="works__title">Forkify</h5>
-              <p class="works__description">
-                Search recipes for multiple different foods
-              </p>
-              <div class="works__links">
-                <a class="btn btn--small" href="https://github.com/vihahuynh/Forkify" target="_blank">
-                  Code
-                </a>
-                <a class="btn btn--small" href="https://forkify-nemo.netlify.app/" target="_blank">
-                  Demo
-                </a>
-              </div>
-            </div>
-          </div>
 
-          <div class="works__box hidden">
-            <img src="img/project-mytee.png" alt="My tee" class="works__img" />
-            <div class="works__details">
-              <p class="works__tags">HTML, SCSS</p>
-              <h5 class="works__title">My Tee</h5>
-              <p class="works__description">
-                A mockup landing page for e-commerce website
-              </p>
-              <div class="works__links">
-                <a class="btn btn--small" href="https://github.com/vihahuynh/My-Tee" target="_blank">
-                  Code
-                </a>
-                <a class="btn btn--small" href="https://vihahuynh.github.io/My-Tee/" target="_blank">
-                  Demo
-                </a>
+            <div class="works__box hidden">
+              <img
+                src="img/project-nexter.png"
+                alt="Nexter"
+                class="works__img" />
+              <div class="works__details">
+                <p class="works__tags">HTML, SCSS</p>
+                <h5 class="works__title">Nexter</h5>
+                <p class="works__description">
+                  A mockup landing page for a real-estate company
+                </p>
+                <div class="works__links">
+                  <a
+                    class="btn btn--small"
+                    href="https://github.com/vihahuynh/Advanced-CSS-and-SASS-Nexter"
+                    target="_blank">
+                    Code
+                  </a>
+                  <a
+                    class="btn btn--small"
+                    href="https://vihahuynh.github.io/Advanced-CSS-and-SASS-Nexter/"
+                    target="_blank">
+                    Demo
+                  </a>
+                </div>
               </div>
             </div>
-          </div>
+            <div class="works__box hidden">
+              <img
+                src="img/project-natours.png"
+                alt="Natours works"
+                class="works__img" />
+              <div class="works__details">
+                <p class="works__tags">HTML, SCSS</p>
+                <h5 class="works__title">Natours</h5>
+                <p class="works__description">
+                  A mockup landing page for a travel website
+                </p>
+                <div class="works__links">
+                  <a
+                    class="btn btn--small"
+                    href="https://github.com/vihahuynh/Advanced-CSS-and-SASS-Natours"
+                    target="_blank">
+                    Code
+                  </a>
+                  <a
+                    class="btn btn--small"
+                    href="https://vihahuynh.github.io/Advanced-CSS-and-SASS-Natours/"
+                    target="_blank">
+                    Demo
+                  </a>
+                </div>
+              </div>
+            </div>
 
-          <div class="works__box hidden">
-            <img src="img/project-nexter.png" alt="Nexter" class="works__img" />
-            <div class="works__details">
-              <p class="works__tags">HTML, SCSS</p>
-              <h5 class="works__title">Nexter</h5>
-              <p class="works__description">
-                A mockup landing page for a real-estate company
-              </p>
-              <div class="works__links">
-                <a class="btn btn--small" href="https://github.com/vihahuynh/Advanced-CSS-and-SASS-Nexter"
-                  target="_blank">
-                  Code
-                </a>
-                <a class="btn btn--small" href="https://vihahuynh.github.io/Advanced-CSS-and-SASS-Nexter/"
-                  target="_blank">
-                  Demo
-                </a>
+            <div class="works__box hidden">
+              <img
+                src="img/project-trillo.png"
+                alt="Trillo"
+                class="works__img" />
+              <div class="works__details">
+                <p class="works__tags">HTML, SCSS</p>
+                <h5 class="works__title">Trillo</h5>
+                <p class="works__description"></p>
+                <div class="works__links">
+                  <a
+                    class="btn btn--small"
+                    href="https://github.com/vihahuynh/Advanced-CSS-and-SASS-Trillo"
+                    target="_blank">
+                    Code
+                  </a>
+                  <a
+                    class="btn btn--small"
+                    href="https://vihahuynh.github.io/Advanced-CSS-and-SASS-Trillo/"
+                    target="_blank">
+                    Demo
+                  </a>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="works__box hidden">
-            <img src="img/project-natours.png" alt="Natours works" class="works__img" />
-            <div class="works__details">
-              <p class="works__tags">HTML, SCSS</p>
-              <h5 class="works__title">Natours</h5>
-              <p class="works__description">
-                A mockup landing page for a travel website
-              </p>
-              <div class="works__links">
-                <a class="btn btn--small" href="https://github.com/vihahuynh/Advanced-CSS-and-SASS-Natours"
-                  target="_blank">
-                  Code
-                </a>
-                <a class="btn btn--small" href="https://vihahuynh.github.io/Advanced-CSS-and-SASS-Natours/"
-                  target="_blank">
-                  Demo
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div class="works__box hidden">
-            <img src="img/project-trillo.png" alt="Trillo" class="works__img" />
-            <div class="works__details">
-              <p class="works__tags">HTML, SCSS</p>
-              <h5 class="works__title">Trillo</h5>
-              <p class="works__description"></p>
-              <div class="works__links">
-                <a class="btn btn--small" href="https://github.com/vihahuynh/Advanced-CSS-and-SASS-Trillo"
-                  target="_blank">
-                  Code
-                </a>
-                <a class="btn btn--small" href="https://vihahuynh.github.io/Advanced-CSS-and-SASS-Trillo/"
-                  target="_blank">
-                  Demo
-                </a>
-              </div>
-            </div>
-          </div>
-          <!-- <div class="works__box hidden">
+            <!-- <div class="works__box hidden">
             <img src="img/project-piggame.png" alt="Pig Game" class="works__img" />
             <div class="works__details">
               <p class="works__tags">Javascript</p>
@@ -359,7 +468,7 @@
               </div>
             </div>
           </div> -->
-          <!-- <div class="works__box hidden">
+            <!-- <div class="works__box hidden">
             <img src="img/project-simon.png" alt="Simon Game" class="works__img" />
             <div class="works__details">
               <p class="works__tags">Javascript</p>
@@ -377,117 +486,143 @@
               </div>
             </div>
           </div> -->
+          </div>
+          <div class="works__btn-grid">
+            <a class="btn works__btn works__btn--more">Show more</a>
+            <a class="btn btn--disabled works__btn works__btn--less"
+              >Show less</a
+            >
+          </div>
         </div>
-        <div class="works__btn-grid">
-          <a class="btn works__btn works__btn--more">Show more</a>
-          <a class="btn btn--disabled works__btn works__btn--less">Show less</a>
-        </div>
-      </div>
-    </section>
-    <section class="section section--contact" id="contact">
-      <div class="section__container contact">
-        <div class="divider">
-          <img src="img/dot-brown.svg" alt="dot" class="divider__dot" />
-          <span class="divider__title divider__title--primary-dark">contact me</span>
-          <span class="divider__line divider__line--primary-dark">&nbsp;</span>
-        </div>
-        <div class="contact__form-box">
-          <h3 class="heading-3 heading-3--dark">Say hi</h3>
-          <p class="heading-sub u-margin-bottom-small">
-            I will never share your email with anyone else
-          </p>
-          <!-- <form method="post">
+      </section>
+      <section class="section section--contact" id="contact">
+        <div class="section__container contact">
+          <div class="divider">
+            <img src="img/dot-brown.svg" alt="dot" class="divider__dot" />
+            <span class="divider__title divider__title--primary-dark"
+              >contact me</span
+            >
+            <span class="divider__line divider__line--primary-dark"
+              >&nbsp;</span
+            >
+          </div>
+          <div class="contact__form-box">
+            <h3 class="heading-3 heading-3--dark">Say hi</h3>
+            <p class="heading-sub u-margin-bottom-small">
+              I will never share your email with anyone else
+            </p>
+            <!-- <form method="post">
               <input type="button" value="Send Email" onclick="sendEmail()"/>
             </form>  -->
-          <form method="post" action="" class="contact__form">
-            <div class="contact__group contact__group--name">
-              <input type="text" class="contact__input" id="username" placeholder="Your name" />
+            <form method="post" action="" class="contact__form">
+              <div class="contact__group contact__group--name">
+                <input
+                  type="text"
+                  class="contact__input"
+                  id="username"
+                  placeholder="Your name" />
+              </div>
+              <div class="contact__group contact__group--email">
+                <input
+                  type="email"
+                  class="contact__input"
+                  id="email"
+                  placeholder="Email address" />
+              </div>
+              <div class="contact__group contact__group--subject">
+                <input
+                  type="text"
+                  class="contact__input contact__input--lg"
+                  id="subject"
+                  placeholder="Subject" />
+              </div>
+              <div class="contact__group contact__group--message">
+                <textarea
+                  rows="4"
+                  type="text"
+                  class="contact__input contact__input--lg"
+                  id="message"
+                  placeholder="Message">
+                </textarea>
+              </div>
+              <input
+                type="button"
+                class="contact__btn"
+                value="Send message"
+                onclick="sendEmail()" />
+            </form>
+          </div>
+          <div class="contact__details">
+            <h3 class="heading-3 heading-3--dark">Contact info</h3>
+            <p class="heading-sub u-margin-bottom-small">
+              Feel free to contact me!
+            </p>
+            <div class="contact__info-box">
+              <svg class="contact__icon">
+                <use xlink:href="img/sprite.svg#icon-v-card"></use>
+              </svg>
+              <div class="contact__info">
+                <h5 class="heading-5 heading-5--dark">Name</h5>
+                <p class="contact__text">Huỳnh Vĩ Hà</p>
+              </div>
             </div>
-            <div class="contact__group contact__group--email">
-              <input type="email" class="contact__input" id="email" placeholder="Email address" />
+            <div class="contact__info-box">
+              <svg class="contact__icon">
+                <use xlink:href="img/sprite.svg#icon-location"></use>
+              </svg>
+              <div class="contact__info">
+                <h5 class="heading-5 heading-5--dark">Location</h5>
+                <p class="contact__text">Ho Chi Minh City, Vietnam</p>
+              </div>
             </div>
-            <div class="contact__group contact__group--subject">
-              <input type="text" class="contact__input contact__input--lg" id="subject" placeholder="Subject" />
+            <div class="contact__info-box">
+              <svg class="contact__icon">
+                <use xlink:href="img/sprite.svg#icon-old-phone"></use>
+              </svg>
+              <div class="contact__info">
+                <h5 class="heading-5 heading-5--dark">Phone</h5>
+                <p class="contact__text">(+84) 766 90 1516</p>
+              </div>
             </div>
-            <div class="contact__group contact__group--message">
-              <textarea rows="4" type="text" class="contact__input contact__input--lg" id="message"
-                placeholder="Message">
-              </textarea>
+            <div class="contact__info-box">
+              <svg class="contact__icon">
+                <use xlink:href="img/sprite.svg#icon-mail"></use>
+              </svg>
+              <div class="contact__info">
+                <h5 class="heading-5 heading-5--dark">Gmail</h5>
+                <p class="contact__text">huynhviha1703@gmail.com</p>
+              </div>
             </div>
-            <input type="button" class="contact__btn" value="Send message" onclick="sendEmail()" />
-          </form>
+          </div>
         </div>
-        <div class="contact__details">
-          <h3 class="heading-3 heading-3--dark">Contact info</h3>
-          <p class="heading-sub u-margin-bottom-small">
-            Feel free to contact me!
-          </p>
-          <div class="contact__info-box">
-            <svg class="contact__icon">
-              <use xlink:href="img/sprite.svg#icon-v-card"></use>
-            </svg>
-            <div class="contact__info">
-              <h5 class="heading-5 heading-5--dark">Name</h5>
-              <p class="contact__text">Huỳnh Vĩ Hà</p>
-            </div>
+      </section>
+      <footer class="footer">
+        <div class="footer__content">
+          <div class="footer__icons">
+            <a href="https://www.facebook.com/nemo.huynh.viha" target="_blank">
+              <svg class="footer__icon">
+                <use xlink:href="img/sprite.svg#icon-facebook"></use>
+              </svg>
+            </a>
+            <a href="https://www.linkedin.com/in/huynhviha/" target="_blank"
+              ><svg class="footer__icon">
+                <use xlink:href="img/sprite.svg#icon-linkedin"></use></svg
+            ></a>
+            <a href="https://github.com/vihahuynh" target="_blank">
+              <svg class="footer__icon">
+                <use xlink:href="img/sprite.svg#icon-github"></use>
+              </svg>
+            </a>
+            <a href="https://www.instagram.com/__hanemo__/" target="_blank">
+              <svg class="footer__icon">
+                <use xlink:href="img/sprite.svg#icon-instagram"></use>
+              </svg>
+            </a>
           </div>
-          <div class="contact__info-box">
-            <svg class="contact__icon">
-              <use xlink:href="img/sprite.svg#icon-location"></use>
-            </svg>
-            <div class="contact__info">
-              <h5 class="heading-5 heading-5--dark">Location</h5>
-              <p class="contact__text">Ho Chi Minh City, Vietnam</p>
-            </div>
-          </div>
-          <div class="contact__info-box">
-            <svg class="contact__icon">
-              <use xlink:href="img/sprite.svg#icon-old-phone"></use>
-            </svg>
-            <div class="contact__info">
-              <h5 class="heading-5 heading-5--dark">Phone</h5>
-              <p class="contact__text">(+84) 766 90 1516</p>
-            </div>
-          </div>
-          <div class="contact__info-box">
-            <svg class="contact__icon">
-              <use xlink:href="img/sprite.svg#icon-mail"></use>
-            </svg>
-            <div class="contact__info">
-              <h5 class="heading-5 heading-5--dark">Gmail</h5>
-              <p class="contact__text">huynhviha1703@gmail.com</p>
-            </div>
-          </div>
+          <div class="footer__copyright">&copy; Copyright 2021 by Nemo</div>
         </div>
-      </div>
-    </section>
-    <footer class="footer">
-      <div class="footer__content">
-        <div class="footer__icons">
-          <a href="https://www.facebook.com/nemo.huynh.viha" target="_blank">
-            <svg class="footer__icon">
-              <use xlink:href="img/sprite.svg#icon-facebook"></use>
-            </svg>
-          </a>
-          <a href="https://www.linkedin.com/in/huynhviha/" target="_blank"><svg class="footer__icon">
-              <use xlink:href="img/sprite.svg#icon-linkedin"></use>
-            </svg></a>
-          <a href="https://github.com/vihahuynh" target="_blank">
-            <svg class="footer__icon">
-              <use xlink:href="img/sprite.svg#icon-github"></use>
-            </svg>
-          </a>
-          <a href="https://www.instagram.com/__hanemo__/" target="_blank">
-            <svg class="footer__icon">
-              <use xlink:href="img/sprite.svg#icon-instagram"></use>
-            </svg>
-          </a>
-        </div>
-        <div class="footer__copyright">&copy; Copyright 2021 by Nemo</div>
-      </div>
-      <img class="footer__img" src="img/footer.svg" alt="footer" />
-    </footer>
-  </div>
-</body>
-
+        <img class="footer__img" src="img/footer.svg" alt="footer" />
+      </footer>
+    </div>
+  </body>
 </html>
