@@ -356,7 +356,8 @@ body {
     grid-column: 1 / 2; }
   .experience__work-description {
     grid-row: 4 / 5;
-    grid-column: 3 / 4; }
+    grid-column: 3 / 4;
+    padding-right: 10rem; }
   .experience__date {
     margin-bottom: 1rem;
     color: #8a4a28; }
