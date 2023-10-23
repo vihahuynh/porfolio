@@ -390,14 +390,16 @@ body {
     color: #8a4a28;
     font-weight: 400; }
 
-@media (max-width: 37.5em) {
+@media (max-width: 68.75em) {
   .section--experience {
     padding: 5rem; }
   .experience {
     grid-template-columns: 0.5fr 0.05fr 1.5fr; }
     .experience__work-img, .experience__education-img {
       margin-left: 0;
-      width: 80%; } }
+      width: 80%; }
+    .experience__work-description {
+      padding-right: 0; } }
 
 .load {
   background-color: #f2e1d3;
@@ -554,6 +556,7 @@ body {
     left: 3.5rem; }
   .header__img {
     display: inline-block;
+    height: 85vh;
     width: 100%;
     background-size: cover;
     position: absolute;
@@ -586,6 +589,14 @@ body {
 
 .animate {
   animation: moveInLeft 0.8s ease-out; }
+
+@media (max-width: 87.5em) {
+  .header__img {
+    height: 70vh; } }
+
+@media (max-width: 50em) {
+  .header__img {
+    height: 50vh; } }
 
 @media (max-width: 37.5em) {
   .header__img {

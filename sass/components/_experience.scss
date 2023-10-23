@@ -82,7 +82,15 @@
   }
 }
 
-@media (max-width: 37.5em) {
+// @media (max-width: 70em) {
+//   .experience {
+//     &__work-description {
+//       padding-right: 0;
+//     }
+//   }
+// }
+
+@media (max-width: 68.75em) {
   .section--experience {
     padding: 5rem;
   }
@@ -94,6 +102,10 @@
     &__education-img {
       margin-left: 0;
       width: 80%;
+    }
+
+    &__work-description {
+      padding-right: 0;
     }
   }
 }

@@ -1,5 +1,9 @@
 .header {
-  background-image: linear-gradient(to bottom, $color-primary-light 80%, $color-secondary-dark 20%);
+  background-image: linear-gradient(
+    to bottom,
+    $color-primary-light 80%,
+    $color-secondary-dark 20%
+  );
   grid-column: 1 / -1;
   grid-row: 1 / 2;
   position: relative;
@@ -15,7 +19,7 @@
 
   &__img {
     display: inline-block;
-    // height: 85%;
+    height: 85vh;
     width: 100%;
     // background-image: url(https://svgur.com/i/gkD.svg);
     background-size: cover;
@@ -51,6 +55,22 @@
 
 .animate {
   animation: moveInLeft 0.8s ease-out;
+}
+
+@media (max-width: 87.5em) {
+  .header {
+    &__img {
+      height: 70vh;
+    }
+  }
+}
+
+@media (max-width: 50em) {
+  .header {
+    &__img {
+      height: 50vh;
+    }
+  }
 }
 
 @media (max-width: 37.5em) {
