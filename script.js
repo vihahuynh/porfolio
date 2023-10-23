@@ -88,24 +88,104 @@ showLessBtn.addEventListener("click", (e) => {
   checkDisableBtn();
 });
 
+// Validate contact form
+const isValidEmail = (email) => {
+  const regex = /^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/;
+  return regex.test(email);
+};
+
+const showErrorMessage = (className, message) => {
+  document.querySelector(className).innerHTML = message;
+};
+
+const fields = [
+  {
+    id: "username",
+    errorClass: ".contact__error--username",
+    errorMessage: "Name is required!",
+  },
+  {
+    id: "email",
+    errorClass: ".contact__error--email",
+    errorMessage: "Email is required!",
+  },
+  {
+    id: "subject",
+    errorClass: ".contact__error--subject",
+    errorMessage: "Subject is required!",
+  },
+  {
+    id: "message",
+    errorClass: ".contact__error--message",
+    errorMessage: "Message is required!",
+  },
+];
+
+fields.forEach((item) => {
+  document.getElementById(item.id).addEventListener("blur", function (event) {
+    const value = document.getElementById(item.id).value;
+    if (value === "") {
+      showErrorMessage(item.errorClass, item.errorMessage);
+    } else {
+      showErrorMessage(item.errorClass, "");
+    }
+    if (item.id === "email") {
+      if (!isValidEmail(value)) {
+        showErrorMessage(item.errorClass, "Invalid email");
+      } else {
+        showErrorMessage(item.errorClass, "");
+      }
+    }
+  });
+});
+
+// show popup message
+let popupTimeout;
+const showPopupMessage = (message) => {
+  clearTimeout(popupTimeout);
+  document.getElementById("popup-container").classList.remove("hidden");
+  document.querySelector(".popup").innerHTML = message;
+
+  popupTimeout = setTimeout(() => {
+    document.getElementById("popup-container").classList.add("hidden");
+  }, 6000);
+};
+
 // Send Email
 const sendEmail = () => {
-  const username = document.getElementById("username").value;
-  const email = document.getElementById("email").value;
-  const subject = document.getElementById("subject").value;
-  const message = document.getElementById("message").value;
-
-  Email.send({
-    SecureToken: "44cc85c7-d5d9-413c-82f1-2656d0bea78e",
-    To: "huynhviha1703@gmail.com",
-    From: "huynhviha1703@gmail.com",
-    Subject: subject,
-    Body: `My name is ${username}, ${email}, ${message}`,
-  }).then((message) => {
-    alert(message);
-    document.getElementById("username").value = "";
-    document.getElementById("email").value = "";
-    document.getElementById("subject").value = "";
-    document.getElementById("message").value = "";
+  let allowSubmit = true;
+  fields.forEach((item) => {
+    const value = document.getElementById(item.id).value;
+    console.log("value: ", value);
+    if (value === "") {
+      showErrorMessage(item.errorClass, item.errorMessage);
+      allowSubmit = false;
+    } else {
+      showErrorMessage(item.errorClass, "");
+    }
+    if (item.id === "email") {
+      if (!isValidEmail(value)) {
+        showErrorMessage(item.errorClass, "Invalid email");
+        allowSubmit = false;
+      } else {
+        showErrorMessage(item.errorClass, "");
+      }
+    }
   });
+  if (allowSubmit) {
+    Email.send({
+      SecureToken: "44cc85c7-d5d9-413c-82f1-2656d0bea78e",
+      To: "huynhviha1703@gmail.com",
+      From: "huynhviha1703@gmail.com",
+      Subject: subject,
+      Body: `My name is ${username}, ${email}, ${message}`,
+    }).then((message) => {
+      console.log("message: ", message);
+      showPopupMessage(message === "OK" ? "Send email successfully!" : message);
+
+      fields.forEach((item) => {
+        document.getElementById(item.id).value = "";
+      });
+    });
+  }
 };

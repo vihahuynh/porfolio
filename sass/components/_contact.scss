@@ -34,6 +34,13 @@
     }
   }
 
+  &__error {
+    margin-left: 2rem;
+    margin-top: 0.5rem;
+    font-size: 1.2rem;
+    color: red;
+  }
+
   &__input {
     display: block;
     width: 90%;

@@ -1,0 +1,15 @@
+#popup-container {
+    position: fixed;
+    bottom: 3rem;
+    right: 3rem;
+    z-index: 1999;
+    width: 20rem;
+    animation: popup 0.6s;
+}
+
+.popup {
+    font-size: 1.4rem;
+    color: white;
+    padding: 1rem 2rem;
+    background-color: $color-primary-dark;
+}
