@@ -139,6 +139,18 @@ fields.forEach((item) => {
   });
 });
 
+// show popup message
+let popupTimeout;
+const showPopupMessage = (message) => {
+  clearTimeout(popupTimeout);
+  document.getElementById("popup-container").classList.remove("hidden");
+  document.querySelector(".popup").innerHTML = message;
+
+  popupTimeout = setTimeout(() => {
+    document.getElementById("popup-container").classList.add("hidden");
+  }, 6000);
+};
+
 // Send Email
 const sendEmail = () => {
   let allowSubmit = true;
@@ -168,7 +180,8 @@ const sendEmail = () => {
       Subject: subject,
       Body: `My name is ${username}, ${email}, ${message}`,
     }).then((message) => {
-      alert(message);
+      console.log("message: ", message);
+      showPopupMessage(message === "OK" ? "Send email successfully!" : message);
 
       fields.forEach((item) => {
         document.getElementById(item.id).value = "";
